@@ -105,3 +105,22 @@
         - Lifecycle methods
     - With the introduction of hooks in React 16.8.0 (February 6, 2019), we can now write full-featured function components
         - Docs: https://github.com/facebook/react/blob/master/CHANGELOG.md#1680-february-6-2019
+
+## 2 Introducing JSX
+### 2.1 Basic Rules of JSX
+1. **JSX Intro**: 
+    - "JS Syntax Extension" or "JS + XML"
+    - Docs: https://reactjs.org/docs/introducing-jsx.html
+    - Casual Defn: JSX is a tool that allows us to write HTML looking code directly in JS
+    - Thus, no need to maintain separate template file and JS file (like Angular)
+    - Note: It is possible to build our React app without JSX. But it will be much more difficult/complex.
+2. **Using JSX**:
+    - JSX isn't leegal JavaScript
+    - It has to be "transpiled" to JavaScript
+    - Can be transpiled with "Babel"
+3. **JSX Rules**:
+    - JSX is more strict than HTML. JSX elements must either:
+        - Have an explicit closing tag: `<b>...</b>`
+        - Be explicitly closed: `<input name="msg" />`
+        - can not leave off the `/` or will get a syntax error
+    - JSX must return one element only. And can not return more than one element. If there are more than one elements, all of them must be wrapped with one single element eg: a `div` or `React.Fragment`.
