@@ -71,7 +71,7 @@
     - Run server from editor: select the file, r click and run: open file with server. R click file ---> Stop the server
     - Run server from CLI using python: navigate to directory. `pythton3 -m http.server`
 
-### 1.5 First React Component
+### 1.5 First React Component - using Class based component
 1. Will create a class based component
 2. Docs: https://reactjs.org/docs/components-and-props.html
 3. Note: Traditionally, class based component were considered more powerful. But with the introduction of React hooks, things are changing and fn components are becoming more powerful.
@@ -86,3 +86,22 @@
     - index.js: render component using ReactDOM.render
 5. Serve: index.html ---> R Clk ---> Open with Live server
     - Note: opening index.html directly on browser won't work. The file must be served to work.
+
+### 1.6 Function vs Class components
+1. Class Component:
+    - The "Traditional" React component
+    - Write logic in a JS class
+    - Must include a render method
+2. Function Component:
+    - Historically used for simpler "dumb" components
+    - Write logic in a JS fn
+    - No render method needed, just return content
+3. 01_react_intro/index.js file:
+    - Modify Hello class based component to fn based component
+4. **Differences?**:
+    - Both can accept props and render content
+    - Historically, fn components couldn't use important features like:
+        - State,
+        - Lifecycle methods
+    - With the introduction of hooks in React 16.8.0 (February 6, 2019), we can now write full-featured function components
+        - Docs: https://github.com/facebook/react/blob/master/CHANGELOG.md#1680-february-6-2019
