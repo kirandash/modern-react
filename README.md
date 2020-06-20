@@ -124,3 +124,11 @@
         - Be explicitly closed: `<input name="msg" />`
         - can not leave off the `/` or will get a syntax error
     - JSX must return one element only. And can not return more than one element. If there are more than one elements, all of them must be wrapped with one single element eg: a `div` or `React.Fragment`.
+
+### 2.2 How JSX works BTS
+1. Docs: JSX in Depth: https://reactjs.org/docs/jsx-in-depth.html
+2. Fundamentally, JSX just provides syntactic sugar for the `React.createElement(component, props, ...children)` function.
+3. Check how JSX is converted to JS with babel using online tools: 
+    - https://babeljs.io/repl
+    - Make sure in left panel preset: react is enabled
+4. Instead of JSX we can use React.createElement to build our app. But it is more difficult and more amount of code. Check on babeljs tool to see how the code looks in React.createElement
