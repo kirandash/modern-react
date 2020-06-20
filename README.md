@@ -132,3 +132,11 @@
     - https://babeljs.io/repl
     - Make sure in left panel preset: react is enabled
 4. Instead of JSX we can use React.createElement to build our app. But it is more difficult and more amount of code. Check on babeljs tool to see how the code looks in React.createElement
+
+### 2.3 Embedding JS in JSX
+1. Add JS code to JSX using `{}`
+2. Using `{}` we can:
+    - run JS operations, 
+    - pass props, 
+    - add styles, 
+    - add dynamic content etc.
