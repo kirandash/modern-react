@@ -149,3 +149,15 @@
     - ternary operator check
     - boolean check
     - if check and a variable
+
+### Standard React App Layout
+1. Conventions:
+    - **App**: It's conventional for the top-level component to be named App. This renders the other sub components.
+    - It's better to follow the convention, so other developers reading our code will know where to start.
+    - Usually, App is the only component rendered in index.js
+    - **Order of Script tags**: sub component js files should load before index.js. Ex: Hello.js should load before index.js in index.html file.
+    - Have only one component per file.
+2. Demo:
+    - Create App component in index.js and render it on root.
+    - Create Hello and NumPicker component. Load them before index.js in index.html file.
+    - Render Hello and NumPicker components in index.js as subcomponents to App.
