@@ -166,5 +166,13 @@
 ### 3.1 Intro to React Props
 1. Propserties (aka. Props)
     - A useful component is a reusable one. Which means, making the component configurable or customizable.
-    - Props help in customizing component.
+    - Props help in customizing/configuring a react component.
 2. props ex: `to="kiran dash"` traditionally mentioned in double quotes
+
+### 3.2 Props are immutable
+1. Props objects are **immutable**. 
+    - All it's properties are **read only**. 
+    - Props Object is **not extensible**.
+    - On trying to change props in react component, it will throw error: "Cannot assign to read only property 'from' of object"
+    - Similarly, we can not add new properties to props object. It will throw error: "Cannot add property age, object is not extensible"
+2. To update values: we will use some other tools viz: state etc.
