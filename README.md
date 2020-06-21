@@ -134,9 +134,18 @@
 4. Instead of JSX we can use React.createElement to build our app. But it is more difficult and more amount of code. Check on babeljs tool to see how the code looks in React.createElement
 
 ### 2.3 Embedding JS in JSX
-1. Add JS code to JSX using `{}`
+1. Add JS code to JSX using `{}` (interpolation)
 2. Using `{}` we can:
     - run JS operations, 
     - pass props, 
     - add styles, 
     - add dynamic content etc.
+
+### 2.4 Conditionals in JSX
+1. Docs:
+    - https://reactjs.org/docs/conditional-rendering.html
+    - https://blog.logrocket.com/conditional-rendering-in-react-c6b0e5af381e/
+2. Conditionally render with:
+    - ternary operator check
+    - boolean check
+    - if check and a variable
