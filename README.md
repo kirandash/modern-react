@@ -150,7 +150,7 @@
     - boolean check
     - if check and a variable
 
-### Standard React App Layout
+### 2.4 Standard React App Layout
 1. Conventions:
     - **App**: It's conventional for the top-level component to be named App. This renders the other sub components.
     - It's better to follow the convention, so other developers reading our code will know where to start.
@@ -161,3 +161,10 @@
     - Create App component in index.js and render it on root.
     - Create Hello and NumPicker component. Load them before index.js in index.html file.
     - Render Hello and NumPicker components in index.js as subcomponents to App.
+
+## 3. Props/properties and More
+### 3.1 Intro to React Props
+1. Propserties (aka. Props)
+    - A useful component is a reusable one. Which means, making the component configurable or customizable.
+    - Props help in customizing component.
+2. props ex: `to="kiran dash"` traditionally mentioned in double quotes
