@@ -176,3 +176,9 @@
     - On trying to change props in react component, it will throw error: "Cannot assign to read only property 'from' of object"
     - Similarly, we can not add new properties to props object. It will throw error: "Cannot add property age, object is not extensible"
 2. To update values: we will use some other tools viz: state etc.
+
+### 3.3 Other types of Props
+1. Props can be strings ex: `to="kiran dash"`
+2. For other types, embed JS expression using the curly braces `{}`:
+    - `<Person name="Kiran" salary={12000} hobbies={["coding", "working out", "film making"]}>`
+    - Note: Booleans by default are set to True.
