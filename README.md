@@ -184,3 +184,7 @@
     - Note: Booleans by default are set to True.
 
 ### 3.4 Slot Machine Example - Props
+
+### 3.5 Looping in JSX
+1. `array.map(fn)` is commonly used to output loops in JSX.
+2. Note: during looping: providing a key to loop items is must. (To create unique identification)
