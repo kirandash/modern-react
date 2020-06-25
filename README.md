@@ -182,3 +182,5 @@
 2. For other types, embed JS expression using the curly braces `{}`:
     - `<Person name="Kiran" salary={12000} hobbies={["coding", "working out", "film making"]}>`
     - Note: Booleans by default are set to True.
+
+### 3.4 Slot Machine Example - Props
