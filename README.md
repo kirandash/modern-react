@@ -188,3 +188,7 @@
 ### 3.5 Looping in JSX
 1. `array.map(fn)` is commonly used to output loops in JSX.
 2. Note: during looping: providing a key to loop items is must. (To create unique identification)
+
+### 3.6 Adding Default Props with static `defaultProps` object
+1. **Default Props**: Components can specify default values for missing props.
+2. Create static `defaultProps` object to contain default values for all props.
