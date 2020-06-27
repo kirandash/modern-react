@@ -192,3 +192,14 @@
 ### 3.6 Adding Default Props with static `defaultProps` object
 1. **Default Props**: Components can specify default values for missing props.
 2. Create static `defaultProps` object to contain default values for all props.
+
+### 3.7 Styling React
+1. **CSS Selectors in JSX**: 
+    - We have to add class selector in JSX using `className` to avoid conflict with reserved keyword `class` for react classes.
+    - Similarly, we have to use `htmlFor` instead of `for`. Since `for` is reserved for `for loops` in JS.
+2. **Styles**:
+    - External CSS: Ex: app.css file
+    - Inline CSS: We can inline CSS styles, but now style takes a JS object.
+        - Note: in react js, style attributes should be camel case (`fontSize`) not kebab case (`font-size`) like normal CSS.
+3. **Conditional/Dynamic Style**: 
+    - Can add className to element conditionally to apply dynamic CSS
