@@ -203,3 +203,35 @@
         - Note: in react js, style attributes should be camel case (`fontSize`) not kebab case (`font-size`) like normal CSS.
 3. **Conditional/Dynamic Style**: 
     - Can add className to element conditionally to apply dynamic CSS
+
+## 4. Create React App Introduction
+### 4.1 Create React App tool Intro
+1. What is **Create React App** tool and how to use it
+2. Use **ES2015 modules** to share code across files
+2. Compare **default vs non-default exports**
+
+1. Why Create React App?
+    - We can build app without create react app tool: like we did so far. Get react.js and react-dom.js from a CDN. And We can transpile JSX in the browser at runtime
+    - Create-React-App is a utility script (`npx create-react-app my-app`) that: 
+        - Creates a skeleton react project
+        - Sets the project up so that: JS files are run through Babel automatically
+        - Let's us use super-modern JS features/idioms
+        - Makes testing & deployment much easier
+        - Docs: https://create-react-app.dev/, https://reactjs.org/docs/create-a-new-react-app.html
+
+### 4.2 Ways of using CRA
+1. Two ways:
+    - npx (new)
+    - npm
+2. Dependencies: nodejs LTS version: https://nodejs.org/en/
+    - check node version: In terminal run: `node -v` (12.18.1)
+    - check npm version: `npm -v` or `npx -v` (6.14.5)
+3. With npx, we don't have to install CRA on our machine.
+    - `npx create-react-app hello_world`
+    - Note: to use npx, our machine must have Node >= 8.10 and npm >= 5.6.
+4. With npm, we will have to install create-react-app globally on our machine and then use it.
+    - `npm install -g create-react-app`: installs the CRA tool
+    - `create-react-app hello_world` : use CRA tool to create react project
+5. Run server:
+    - `npm start`
+
