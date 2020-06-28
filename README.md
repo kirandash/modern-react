@@ -290,3 +290,27 @@
     - You never need to make a default export,(default exports are totally optional) but it can be **helpful to indicate the most important thing in a file**.
 
 ### 4.6 Modules Example
+
+### 4.7 CRA and React component conventions
+1. Each React component goes in a separate file.
+    - Ex: src/Car.js for Car component
+    - src/House.js for House component
+2. Better to make file name of component same as component's name.
+    - must be capital case
+3. Components extends Component(imported from React)
+    - Export the component as default object
+4. CRA skeleton assumes top object is App in App.js
+    - Best to keep this. (So will be easy for future devs to read our code by identifying the starting point)
+
+### 4.8 CSS and assets in CRA
+1. CSS:
+    - Make a CSS file for each React component
+        - Ex: House.css for House component
+    - Import it at the top of House.js
+        - CRA will automatically load that CSS
+    - Conventional to add className="House" onto House div
+        - And use that as prefix for sub-items to style
+        - Ex: .House, .House-title, .House-address etc.
+2. Images:
+    - Store images in src/folder with the components. Or a subfolder
+    - Load them where needed, and use imported name where path should go
