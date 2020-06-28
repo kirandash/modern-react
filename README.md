@@ -235,3 +235,56 @@
 5. Run server:
     - `npm start`
 
+### 4.3 Creating a new App
+1. Standard way of naming: kebab case (Ex: hello-world) but can give any other name as well.
+    - `npx create-react-app our-first-app`
+    - or `npx create-react-app hello_world`
+2. Folder structure (hello_world):
+    - node_modules: contains all packages
+    - public: contains publicly available code. (Will edit rarely)
+        - viz: index.html file: the starting point of our app. Main HTML page of the site. The file that loads when our app is launched
+            - div with id `root`: where our react app will load
+        - favicon.ico
+    - src: contains all react code (Most of coding will be done here)
+        - App.css (CSS for root react component)
+        - App.js    (Root react component)
+        - App.test.js (Tests for root react component)
+        - index.css (Site wide/global CSS)
+        - index.js  (Global JS or starting JS)
+        - logo.svg  (React logo)
+        - serviceWorker.js
+    - .gitignore: to ignore files/folders
+    - package.json: contains all dependencies. Can add package later to this file.
+    - package-lock.json: Lock file, don't edit directly
+    - README.md: README instructions file containing info about project
+
+### 4.4 Starting up the Server
+1. Starting up the server:
+    - `npm start`
+2. Webpack: CRA is built on top of "**webpack**", a JS utility that:
+    - enables **module importing/exporting**
+        - packages up all CSS/images/JS into a single file for browser
+        - Dramatically reduces # of HTTP requests for performance
+    - **Hot realoading**: launched application in browser will automatically reload when you change a source file.
+        - Is smart and tries to only reload relevant files
+    - Enables **easy testing and deployment**
+3. Benefit with CRA: webpack is preconfigured and we don't need to setup everything from scratch.
+
+### 4.5 ES2015 Modules Import and Export
+1. **Modules**:
+    - CRA uses ES2015 "modules"
+    - This is a newer, standardized version of Node's `require()`
+    - import is used to export/import classes/data/functions between JS files
+2. Demo:
+    - `import React from 'react';`: will look for react folder in node_modules directory
+    - `import ReactDOM from 'react-dom';`: will look for react-dom folder in node_modules directory
+    - `import helpful from './helpers';`: will look for helpers.js file in current directory(src)
+3. Difference b/w `export default` and `export {}`
+    - helpers.js
+    - utils.js
+    - functions.js
+4. `import React, { Component } from 'react';`: Here React is the default export while Component is the non default export
+5. **To Default or not?**:
+    - Conventionally, default exports are used when there's a "most-likely" thing to exporting.
+    - Ex: in a React component file: it's common to have the component be the default export.
+    - You never need to make a default export,(default exports are totally optional) but it can be **helpful to indicate the most important thing in a file**.
