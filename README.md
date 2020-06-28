@@ -288,3 +288,5 @@
     - Conventionally, default exports are used when there's a "most-likely" thing to exporting.
     - Ex: in a React component file: it's common to have the component be the default export.
     - You never need to make a default export,(default exports are totally optional) but it can be **helpful to indicate the most important thing in a file**.
+
+### 4.6 Modules Example

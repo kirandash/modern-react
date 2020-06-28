@@ -14,6 +14,9 @@ import { welcome, sort, add as myAdd} from './utils'; // non default fns must ma
 // Importing combination of default + non default fns
 import myA, { b as myB, c, d } from './functions'; // Default fns can be given any alias while importing, non default fns must maintain the same name and can add alias if you want using 'as' keyword
 
+import allFoods from './foods/foods';
+import { choice, remove } from './foods/helpers';
+
 h(); // calls helpful fn since that is the default export
 welcome();
 sort();
@@ -22,6 +25,14 @@ myA();
 myB();
 c();
 d();
+
+// 1 - Randomly pick a food from the foods array
+let food = choice(allFoods);
+console.log(`Today's lunch is: ${food}`);
+
+// 2 - Remove the picked fruit from the foods array
+let remainingFoods = remove(allFoods, food);
+console.log(`We have ${remainingFoods.length} food left.`)
 
 ReactDOM.render(
   <React.StrictMode>
