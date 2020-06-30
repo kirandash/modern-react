@@ -334,3 +334,5 @@
 
 ### 5.5 Pokegame component
 1. Winning hand is decided by comparing experience of all cards in one hand.
+
+### 5.6 Styling
