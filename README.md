@@ -389,3 +389,12 @@
     - Add Game.js
     - states can be checked out in dev tools by selecting a component
     - Note: With state, initialization is mandatory. With props: initialization is not reqd. By default: this.props exist but this.state is undefined.
+
+### 6.5 Initializing State - Alternate shortcut
+1. Using "proposal class properties"
+    - creating a state property directly inside class. not inside constructor like earlier.
+    - Not a JS standard way
+    - But does the job with less amount of code
+    - **Imp Note:** Not real JS. so the solution works only with babel. If our app is not created using CRA, we will have to add some extra babel settings by adding a plugin called: plugin-proposal-class-properties
+    - Docs: https://babeljs.io/docs/en/babel-plugin-proposal-class-properties (added by default for CRA)
+    - Test code @ https://babeljs.io/repl to check how babel converts shortcut into JS valid code by adding constructor and defining property.
