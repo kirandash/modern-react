@@ -385,3 +385,7 @@
     - constructor takes one argument, props. Ex: `constructor(props){ super(props) }`
     - We must call `super(props)` at start of a constructor, which **registers** our class as a React component.
     - After initialization, we can access state using `this.state`
+4. Demo
+    - Add Game.js
+    - states can be checked out in dev tools by selecting a component
+    - Note: With state, initialization is mandatory. With props: initialization is not reqd. By default: this.props exist but this.state is undefined.
