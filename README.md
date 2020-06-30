@@ -316,18 +316,21 @@
     - Load them where needed, and use imported name where path should go
 
 ## 5. Pokedex project
-### 5.1 Create project with CRA & PokeCard component
+### 5.1 Create project with CRA & Pokecard component
 1. `npx create-react-app pokemon`
 2. `cd pokemon`
 3. `npm start`
 4. clean up App.js
-5. Create src/PokeCard.js
+5. Create src/Pokecard.js
 
 ### 5.2 Create Pokedex - List component
-1. Pokedex will render list of PokeCard components
-2. Pokedex.js - loop through PokeCard
+1. Pokedex will render list of Pokecard components
+2. Pokedex.js - loop through Pokecard
 3. Add Pokedex to App.js
 
 ### 5.3 Styling
 
 ### 5.4 Adding HQ images
+
+### 5.5 Pokegame component
+1. Winning hand is decided by comparing experience of all cards in one hand.
