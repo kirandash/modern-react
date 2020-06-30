@@ -320,3 +320,5 @@
 1. `npx create-react-app pokemon`
 2. `cd pokemon`
 3. `npm start`
+4. clean up App.js
+5. Create src/PokeCard.js
