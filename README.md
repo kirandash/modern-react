@@ -336,3 +336,52 @@
 1. Winning hand is decided by comparing experience of all cards in one hand.
 
 ### 5.6 Styling
+
+## 6. React State - Intro
+### 6.1 Intro to state
+1. Concept of state in React
+2. How to model/initialize state in React
+3. How to use events to trigger state changes
+
+### 6.2 React Dev Tools
+1. "React Developer Tools" extension by Facebook - Add to Chrome or Firefox
+2. It will add "Components" and "Profiler" tabs in dev tools window
+3. Components shows all the components + details viz: props etc.
+
+### 6.3 What is State
+1. In any sufficiently advanced web app, the UI has to be stateful.
+    - Ex: different screens for logged-in and logged-out users
+    - Ex: clicking a button opens up a pop up. keeping track of if popup is open/closed.
+    - Ex: state of accordions
+2. Note: state of FE is not always directly tied up with BE.
+3. State changes.
+    - State is designed to change in response to events
+4. What does State track?
+    - 2 types of things state on the client/FE keeps track of:
+        - **UI logic**: The changing state of the interface e.g. state of a modal (open/closed)
+        - **Business logic**: The changing state of data e.g. inbox messages read/unread etc.
+5. Conventional state management with **Vanialla/jQuery state**
+    - earlier we kept track of state with jQuery by selecting DOM elements and adding attributes. And state was **inferred from the DOM** itself.
+    - React state is the **opposite**.
+
+### 6.4 Initializing State
+1. **Revision:**
+    - Component
+        - building block of React
+        - combines logic (JS) and presentation (JSX)
+    - props
+        - data passed to a component (or found via defaults: defaultProps)
+        - immutable; component can not change it's own props
+    - state
+        - internal data specific to a component
+        - data that changes over time
+2. **What is React State?**
+    - In React, state is an instance attribute on a component
+    - It's always on **object** (POJO) Plain Old JavaScript Object, since you will want to keep track of several keys/values.
+3. **Initial State**
+    - State should be initialized as soon as the component is created.
+    - So, should be initialized in constructor function.
+    - Note: if component is stateless, we can emit the constructor function.
+    - constructor takes one argument, props. Ex: `constructor(props){ super(props) }`
+    - We must call `super(props)` at start of a constructor, which **registers** our class as a React component.
+    - After initialization, we can access state using `this.state`
