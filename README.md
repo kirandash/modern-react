@@ -322,3 +322,8 @@
 3. `npm start`
 4. clean up App.js
 5. Create src/PokeCard.js
+
+### 5.2 Create Pokedex - List component
+1. Pokedex will render list of PokeCard components
+2. Pokedex.js - loop through PokeCard
+3. Add Pokedex to App.js
