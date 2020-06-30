@@ -329,3 +329,5 @@
 3. Add Pokedex to App.js
 
 ### 5.3 Styling
+
+### 5.4 Adding HQ images
