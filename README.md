@@ -411,3 +411,18 @@
     - Demo: SuperProps.js
     - Plain React componenet will work fine with just super() but if the component has props then we will have access to props in anywhere in class viz render method but not in constructor.
     - to get access to props in constructor: we must use super(props)
+
+### 6.7 Setting state correctly with this.setState method
+1. Never directly change the state
+    - `this.state.score = 45;`
+2. use `this.setState` method:
+    - `this.setState()` is the built-in React method of changing a component's state.
+    - Can call in any instance method except the constructor
+    - Takes an object describing the state changes
+    - Patches state object - keys that you didn't specify won't change
+4. why this.setState and not this.state.score?
+    - Reason 1: state change is **asynchronous**. Thus, better to use setState method where we can have a callback to do something after the state has been changed. We won't have callback with directly changing the state.
+    - Reason 2: Docs: https://reactjs.org/docs/react-component.html#setstate
+    - Think of setState() as a request rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. React does not guarantee that the state changes are applied immediately.
+    - If we try to change state directly, then it will try to immediately change & re-render the component: which is not suggested. (For performance reasons)
+    - Components re-renders when their state changes. (even if the value is not used in render)
