@@ -314,3 +314,9 @@
 2. Images:
     - Store images in src/folder with the components. Or a subfolder
     - Load them where needed, and use imported name where path should go
+
+## 5. Pokedex project
+### 5.1 Create project with CRA & PokeCard component
+1. `npx create-react-app pokemon`
+2. `cd pokemon`
+3. `npm start`
