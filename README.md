@@ -327,3 +327,5 @@
 1. Pokedex will render list of PokeCard components
 2. Pokedex.js - loop through PokeCard
 3. Add Pokedex to App.js
+
+### 5.3 Styling

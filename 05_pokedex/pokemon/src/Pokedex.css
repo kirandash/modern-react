@@ -1,0 +1,9 @@
+.Pokedex-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Pokecard-data {
+    font-size: 80%;
+}
