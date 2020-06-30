@@ -398,3 +398,16 @@
     - **Imp Note:** Not real JS. so the solution works only with babel. If our app is not created using CRA, we will have to add some extra babel settings by adding a plugin called: plugin-proposal-class-properties
     - Docs: https://babeljs.io/docs/en/babel-plugin-proposal-class-properties (added by default for CRA)
     - Test code @ https://babeljs.io/repl to check how babel converts shortcut into JS valid code by adding constructor and defining property.
+
+### 6.6 super() vs super(props)
+1. constructor takes one argument, props. Ex: `constructor(props){ super(props) }`
+2. We must call `super(props)` at start of a constructor, which **registers** our class as a React component.
+3. **What & Why super()?**
+    - when we extend/derive a component, we must call the constructor of parent class before calling the constructor of child class.
+    - super() is used to call the constructor of parent class.
+    - without super() it will throw error: Must call super constructor in derived class before accessing 'this' or returning from derived constructor
+    - Demo: super.js
+4. **What & Why super(props)?**
+    - Demo: SuperProps.js
+    - Plain React componenet will work fine with just super() but if the component has props then we will have access to props in anywhere in class viz render method but not in constructor.
+    - to get access to props in constructor: we must use super(props)
