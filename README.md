@@ -444,3 +444,9 @@
     - Bind in Render: `onClick={this.handleClick.bind(this)}`
     - Arrow Function in Render: `onClick={() => this.handleClick()}`
     - Doc: https://reactjs.org/docs/faq-functions.html#how-do-i-bind-a-function-to-a-component-instance
+
+### 6.9 Click events in React - Alternate Syntax
+1. Class Properties: `handleClick = () => {}`: arrow fn in class properties
+    - Note: This babel class properties and not real JS
+    - Check compiled code at: https://babeljs.io/repl
+    - **Note:** So, if our app is not created with CRA and doesnot have babel, it won't work by default. We will have to add extra babel settings.

@@ -6,6 +6,7 @@ import State from './State';
 import Rando from './Rando';
 import Button from './Button';
 import BrokenClick from './BrokenClick';
+import BindAlt from './BindAlt';
 
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
       <Rando maxNum={7} />
       <Button />
       <BrokenClick/>
+      <BindAlt/>
     </div>
   );
 }
