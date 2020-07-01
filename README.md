@@ -426,3 +426,21 @@
     - Think of setState() as a request rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. React does not guarantee that the state changes are applied immediately.
     - If we try to change state directly, then it will try to immediately change & re-render the component: which is not suggested. (For performance reasons)
     - Components re-renders when their state changes. (even if the value is not used in render)
+
+### 6.8 Click events in React
+1. **React Events:**
+    - State most commonly changes in direct response to some event.
+    - In React, every JSX element has built-in attributes representing every kind of browser event.
+    - They are camel-cased. Ex: onClick and take callback functions as event listeners.
+2. Demo: Click event: Button.js
+3. Demo: this keyword: BrokenClick.js
+    - this is undefined. Error: Cannot read property 'setState' of undefined
+    - React calls handleClick method on clicking btn
+    - But it doesn't remember to call it on our instance
+    - Thus, it calls the method handleClick "out of context"
+    - Solution: **.bind()** the method. So that our method is bind to our instance.
+4. More ways to bind:
+    - Class Properties: `handleClick = () => {}`: arrow fn in class properties
+    - Bind in Render: `onClick={this.handleClick.bind(this)}`
+    - Arrow Function in Render: `onClick={() => this.handleClick()}`
+    - Doc: https://reactjs.org/docs/faq-functions.html#how-do-i-bind-a-function-to-a-component-instance

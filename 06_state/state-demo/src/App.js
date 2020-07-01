@@ -4,6 +4,8 @@ import Game2 from './Game2';
 import SuperProps from './SuperProps';
 import State from './State';
 import Rando from './Rando';
+import Button from './Button';
+import BrokenClick from './BrokenClick';
 
 import './App.css';
 
@@ -15,6 +17,8 @@ function App() {
       <SuperProps animal="dog" breed="beagle" />
       <State />
       <Rando maxNum={7} />
+      <Button />
+      <BrokenClick/>
     </div>
   );
 }
