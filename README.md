@@ -479,3 +479,5 @@
 ### 7.3 Crate Roll Dice component
 1. Parent smart component which will pass state data as props to child component.
 
+### 7.4 Styling and finishing touch
+1. Shake animation: https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
