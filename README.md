@@ -453,3 +453,23 @@
 
 ### 6.10 State Clicker
 1. Clicker.js - On button click - generate random number and if number = 7, hide button and show message.
+
+### 6.11 State vs Props, State as Props - Summary
+1. State
+    - term: state
+    - structure: POJO{}
+    - mutable: Yes
+    - purpose: stores changing component data
+2. Props
+    - term: props
+    - structure: POJO{}
+    - mutable: No
+    - purpose: stores component configuration
+3. State as Props:
+    - A common practice is: a stateful/smart parent component passing down it's state values as props to stateless/dumb child components
+    - This concept is known as "downward data flow".
+    - Component gets simpler as you go down the component hierarchy, and parents tend to be more stateful than their children.
+
+## 7. Dice Game with React State
+### 7.1 Project setup
+1. `npx create-react-app dice`, `npm run start`
