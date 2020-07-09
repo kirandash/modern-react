@@ -7,6 +7,7 @@ import Rando from './Rando';
 import Button from './Button';
 import BrokenClick from './BrokenClick';
 import BindAlt from './BindAlt';
+import Clicker from './Clicker';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
       <Button />
       <BrokenClick/>
       <BindAlt/>
+      <Clicker/>
     </div>
   );
 }

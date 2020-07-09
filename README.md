@@ -450,3 +450,6 @@
     - Note: This babel class properties and not real JS
     - Check compiled code at: https://babeljs.io/repl
     - **Note:** So, if our app is not created with CRA and doesnot have babel, it won't work by default. We will have to add extra babel settings.
+
+### 6.10 State Clicker
+1. Clicker.js - On button click - generate random number and if number = 7, hide button and show message.
