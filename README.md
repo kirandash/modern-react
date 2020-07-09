@@ -473,3 +473,5 @@
 ## 7. Dice Game with React State
 ### 7.1 Project setup
 1. `npx create-react-app dice`, `npm run start`
+
+### 7.2 Create Die component
