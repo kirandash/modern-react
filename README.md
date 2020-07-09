@@ -475,3 +475,7 @@
 1. `npx create-react-app dice`, `npm run start`
 
 ### 7.2 Create Die component
+
+### 7.3 Crate Roll Dice component
+1. Parent smart component which will pass state data as props to child component.
+
