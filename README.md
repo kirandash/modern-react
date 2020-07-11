@@ -481,3 +481,10 @@
 
 ### 7.4 Styling and finishing touch
 1. Shake animation: https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
+
+## 8. React State Patterns
+1. How to update state based off of existing state
+2. Properly manage state updates for mutable data structures
+3. Best practices for modelling state and designing components
+
+### 8.1 Updating existing state
