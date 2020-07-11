@@ -488,3 +488,13 @@
 3. Best practices for modelling state and designing components
 
 ### 8.1 Updating existing state
+1. setState is asynchronous
+    - So, it's risky to assume previous call has finished when you call it. Also, React will sometimes batch (squash together) calls to setState together into one for performance reasons.
+    - If a call to setState depends on current state, the safest thing is to use the alternate callback form.
+    - `this.setState(callback)`
+    - Ex: `this.setState(currState => ({ count: currState.count + 1 }))`
+2. **Abstracting state updates**
+    - The fact that we can pass a fn to `this.setState` lends itself nicely to a more advanced pattern called **functional setState**.
+    - So, we can describe our state updates abstractly as separate functions.
+    - Also, it will help during testing. Testing our state changes  is as simple as testing a plain function.\
+    - The pattern is also useful in Redux.
