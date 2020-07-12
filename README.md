@@ -498,3 +498,14 @@
     - So, we can describe our state updates abstractly as separate functions.
     - Also, it will help during testing. Testing our state changes  is as simple as testing a plain function.\
     - The pattern is also useful in Redux.
+
+### 8.2 Mutating State the safe way
+1. Mutable data structures:
+    - state not only store primitive data viz: numbers/strings but complex data structures as well: viz: objects, arrays, arrays of objects etc.
+    - while updating nested data structures, do not mutate the DS straight away. Although it might work, it will cause problems sometimes
+    - Solution: always make a new copy of DS and mutate the copy and reset the entire DS.
+    - To achieve this we use pure functions viz: .map, .filter, .reduce. And also the spread operator(...)
+    - **Note**: There is a slight **efficiency cost** due to the O(N) space/time required to make a copy, but it's almost always worth it to ensure that our app doesn't have extreme difficulty to detect bugs due to michevious side effects.
+2. Summary
+    - While it sounds oxymoron, immutable state means that there is an old state object and a new state object. Both of which are snapshots in time.
+    - The safest way to update state is to make a copy of it, and then call this.setState with the new copy.
