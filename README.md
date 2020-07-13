@@ -521,3 +521,7 @@
         - State should live on parent.
         - parent component should manage state and have a bunch of dumb stateless child display components.
         - It makes debugging easier, because the state is centralized. It's easier to predict where to find state.
+
+## 9 State examples
+### 9.1 Coin Flipper
+1. Keep track of total coin flips, total head, total tails count, change image and alt tag based on head/tail
