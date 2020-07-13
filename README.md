@@ -509,3 +509,15 @@
 2. Summary
     - While it sounds oxymoron, immutable state means that there is an old state object and a new state object. Both of which are snapshots in time.
     - The safest way to update state is to make a copy of it, and then call this.setState with the new copy.
+
+### 8.3 Designing State
+1. Best designing practices for state:
+    - **Minimizing state:**
+        - In React, try to put as little data in state as possible.
+        - Litmus test: does x change? If not, x should not be part of a state. It should be a prop
+        - Is x already captured by some other value y in state or props? Derive it from there instead.
+        - Ex: For user model: name, birthday, age doesn't change. So, should be in prop and not state. but mood of user changes and thus should be in state.
+    - **Downward Data flow**:
+        - State should live on parent.
+        - parent component should manage state and have a bunch of dumb stateless child display components.
+        - It makes debugging easier, because the state is centralized. It's easier to predict where to find state.
