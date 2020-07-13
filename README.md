@@ -526,3 +526,8 @@
 ### 9.1 Coin Flipper
 1. Keep track of total coin flips, total head, total tails count, current flip state.
 2. change image and alt tag based on head/tail
+
+### 9.2 Color Boxes
+1. On clicking box, it should change color. Store it in individual Box component.
+    - Color shouldn't repeat twice in a sequence.
+2. Challenge: Change parent state based on changes in child component.
