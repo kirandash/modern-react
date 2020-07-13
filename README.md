@@ -524,4 +524,5 @@
 
 ## 9 State examples
 ### 9.1 Coin Flipper
-1. Keep track of total coin flips, total head, total tails count, change image and alt tag based on head/tail
+1. Keep track of total coin flips, total head, total tails count, current flip state.
+2. change image and alt tag based on head/tail
