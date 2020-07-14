@@ -547,3 +547,7 @@
     - Form events: onSubmit etc
     - Keyboard events: onKeyDown, onKeyUp, onKeyPress
     - Docs: https://reactjs.org/docs/events.html#supported-events
+3. Examples:
+    - WiseSquare.js - onMouseEnter
+    - AnnoyingForm.js - onKeyUp
+    - CopyDemo.js - onCopy. Note: some event to trigger onCopy. It copies the content. We can add extra code if required to erased data from clipboard.
