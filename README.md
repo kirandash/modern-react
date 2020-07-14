@@ -597,3 +597,23 @@
     - Without bind: with arrow fn: `onClick={() => this.changeColor(c)}`
         - Not ideal: new fn will be created with every render of component
 2. Note: `onClick={this.changeColor(c)}` will immediately call the fn and won't work.
+
+### 10.5 Passing method to Child components
+1. Common react pattern
+2. Idea: Children are not often stateful but need to tell parents to change state.
+3. Data flow:
+    - Parent component defines the fn
+    - fn is passed as a prop to child component
+    - child component invokes the prop
+    - parent fn is called, setting new state
+    - parent component is re-rendered along with it's children
+4. Ex: NumberList.js and NumberItem.js with bind:
+    - Pass fn as prop: `remove={() => this.remove(n)}`
+    - Con: If we pass/bind fn like this in render. It will create a fn every time component renders. Performance issue.
+5. Better Solution with no bind: BetterNumberList.js and BetterNumberItem.js
+    - By default event is passed as argument with event handler. We will use that to pass data to parent.
+    - State is managed in parent and Child gets data from props and ivokes parent methods using props.
+6. Where to bind?
+    - The higher the better - don't bind in the child component if not needed
+    - For parameter, pass it down to the child as a prop, then bind in parent and child.
+    - Avoid inline arrow functions or inline binding if possible. Try to bind in constructor.

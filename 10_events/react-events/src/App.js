@@ -6,6 +6,8 @@ import CopyDemo from './CopyDemo';
 import WiseSquareWithProps from './WiseSquareWithProps';
 import ExperimentalSquare from './ExperimentalSquare';
 import ButtonList from './ButtonList';
+import NumberList from './NumberList';
+import BetterNumberList from './BetterNumberList';
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
       <ExperimentalSquare />
       <h1>10.4 Bind with Arguments</h1>
       <ButtonList />
+      <h1>10.5 Passing method to Child components</h1>
+      <NumberList />
+      <BetterNumberList />
     </div>
   );
 }
