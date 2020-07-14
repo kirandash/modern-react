@@ -575,3 +575,17 @@
             - Best
         - Cons:
             - More code. Ugly code.
+3. Docs: https://reactjs.org/docs/handling-events.html
+
+### 10.3 Alternate Binding with Class properties
+1. Docs:
+    - https://reactjs.org/docs/handling-events.html
+    - https://babeljs.io/docs/en/babel-plugin-transform-class-properties/
+    - https://stackoverflow.com/questions/46684753/what-is-a-babel-preset-what-does-stage-mean
+2. Ex: `dispenseWisdom = () => {}`
+3. Note: 
+    - Experimental feature.
+    - Not part of React yet. Still in stage 2.
+    - Will work only if babel support is added.
+    - Works by default with CRA since babel settings are pre configured.
+    - Very popular already because of the simplicity.  

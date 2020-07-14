@@ -4,6 +4,7 @@ import WiseSquare from './WiseSquare';
 import AnnoyingForm from './AnnoyingForm';
 import CopyDemo from './CopyDemo';
 import WiseSquareWithProps from './WiseSquareWithProps';
+import ExperimentalSquare from './ExperimentalSquare';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <CopyDemo />
       <h1>10.2 Method Binding</h1>
       <WiseSquareWithProps />
+      <h1>10.3 Alternate Binding with Class properties</h1>
+      <ExperimentalSquare />
     </div>
   );
 }
