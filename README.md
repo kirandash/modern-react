@@ -531,3 +531,19 @@
 1. On clicking box, it should change color. Store it in individual Box component.
     - Color shouldn't repeat twice in a sequence.
 2. Challenge: Change parent state based on changes in child component.
+
+## 10 React Events - In Depth
+1. Event handlers in React component
+2. Method binding to preserve the "this" context with event handlers
+3. Pass event handlers down as props to Child components
+4. The "key" prop that React asks for when mapping over data
+
+### 10.1 Commonly used React Events
+1. React Events:
+    - We can attach event handlers to HTML elements in React via special reserved attributes.
+    - can do in Vanilla JS too but the syntax is a bit different.
+2. Event attributes:
+    - Mouse events: onClick, onMouseOver etc
+    - Form events: onSubmit etc
+    - Keyboard events: onKeyDown, onKeyUp, onKeyPress
+    - Docs: https://reactjs.org/docs/events.html#supported-events
