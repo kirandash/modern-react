@@ -551,3 +551,27 @@
     - WiseSquare.js - onMouseEnter
     - AnnoyingForm.js - onKeyUp
     - CopyDemo.js - onCopy. Note: some event to trigger onCopy. It copies the content. We can add extra code if required to erased data from clipboard.
+
+### 10.2 Method Binding
+1. this keyword:
+    - be careful while using this with event handlers
+    - We will lose the context of "this" when we pass a function as a handler
+2. Fixing Binding:
+    - Use bind inline. Ex: `onMouseEnter={this.dispenseWisdom.bind(this)}`
+        - Pros: Very explicit
+        - Cons:
+            - What if we need to pass the event handler to multiple components?
+            - new fn created on every render (since, bind creates a new fn) - performance issue
+    - arrow inline. Ex: `onMouseEnter={() => this.dispenseWisdom()}`
+        - Pros: No mention of bind. Thus, much clear code.
+        - Cons:
+            - Intent less clear. Since no mention of bind.
+            - What if we need to pass the event handler to multiple components?
+            - new fn created on every render - performance issue
+    - Method bind in constructor. Ex: `this.dispenseWisdom = this.dispenseWisdom.bind(this);`
+        - Pros: 
+            - Only need to bind once! Fn is not created on every render
+            - More performant!
+            - Best
+        - Cons:
+            - More code. Ugly code.

@@ -3,6 +3,7 @@ import './App.css';
 import WiseSquare from './WiseSquare';
 import AnnoyingForm from './AnnoyingForm';
 import CopyDemo from './CopyDemo';
+import WiseSquareWithProps from './WiseSquareWithProps';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <WiseSquare />
       <AnnoyingForm />
       <CopyDemo />
+      <h1>10.2 Method Binding</h1>
+      <WiseSquareWithProps />
     </div>
   );
 }
