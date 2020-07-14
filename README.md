@@ -589,3 +589,11 @@
     - Will work only if babel support is added.
     - Works by default with CRA since babel settings are pre configured.
     - Very popular already because of the simplicity.  
+
+### 10.4 Bind with Arguments
+1. Sol: 
+    - With bind: `onClick={this.changeColor.bind(this, c)}`
+        - Not ideal: new fn will be created with every render of component
+    - Without bind: with arrow fn: `onClick={() => this.changeColor(c)}`
+        - Not ideal: new fn will be created with every render of component
+2. Note: `onClick={this.changeColor(c)}` will immediately call the fn and won't work.
