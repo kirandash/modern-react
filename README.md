@@ -617,3 +617,28 @@
     - The higher the better - don't bind in the child component if not needed
     - For parameter, pass it down to the child as a prop, then bind in parent and child.
     - Avoid inline arrow functions or inline binding if possible. Try to bind in constructor.
+
+### 10.6 Naming Conventions
+1. Entirely upto our preference
+2. For consistency, try to follow the action/handleAction pattern.
+    - Ex: parent will have fn named as remove, passed as prop to child and child will have handleRemove as fn name which will then call props.remove()
+    - Ex2: parent - add(), child - handleAdd()
+
+### 10.7 React keys
+1. Lists and Keys:
+    - key is a special string attr to include when creating list of attributes.
+    - Keys help React identify which items have changed, are added, or are removed. 
+    - Keys should be given to the elements inside the array to give the elements a stable identity
+    - Note: if Key is not given: while removing all similar items will be removed. Also addition won't work properly
+    - Docs: https://reactjs.org/docs/lists-and-keys.html#keys
+2. Picking a key:
+    - Use string that uniquely identifies item among siblings.
+    - Ex: data id from API data
+3. Last resort:
+    - When we don't have stable IDs say from DB, we can use iteration index as a key.
+    - Not a good idea. But an option.
+    - Don't use indexes for keys if item order may change or items can be deleted. 
+        - This can cause performance problems or bugs with component state.
+        - Docs: https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
+4. Better alternatives:
+    - Use packages like uuid or shortid
