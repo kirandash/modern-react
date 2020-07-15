@@ -642,3 +642,5 @@
         - Docs: https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
 4. Better alternatives:
     - Use packages like uuid or shortid
+
+## 11 Hangman - Exercise
