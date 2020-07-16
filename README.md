@@ -655,3 +655,5 @@
 ### 11.4 Add Alt Text
 
 ### 11.5 Randomizing Words
+
+### 11.6 Add reset button
