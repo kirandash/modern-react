@@ -653,3 +653,5 @@
 ### 11.3 Add Game Over on Loss
 
 ### 11.4 Add Alt Text
+
+### 11.5 Randomizing Words
