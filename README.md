@@ -651,3 +651,5 @@
 ### 11.2 Tracking incorrect guesses
 
 ### 11.3 Add Game Over on Loss
+
+### 11.4 Add Alt Text
