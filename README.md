@@ -647,3 +647,5 @@
 ### 11.1 Adding Keys
 1. Use letter itself - unique
     - Or use iteration index (Not ideal)
+
+### 11.2 Tracking incorrect guesses
