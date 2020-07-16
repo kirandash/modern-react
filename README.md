@@ -644,3 +644,6 @@
     - Use packages like uuid or shortid
 
 ## 11 Hangman - Exercise
+### 11.1 Adding Keys
+1. Use letter itself - unique
+    - Or use iteration index (Not ideal)
