@@ -649,3 +649,5 @@
     - Or use iteration index (Not ideal)
 
 ### 11.2 Tracking incorrect guesses
+
+### 11.3 Add Game Over on Loss
