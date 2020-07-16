@@ -657,3 +657,5 @@
 ### 11.5 Randomizing Words
 
 ### 11.6 Add reset button
+
+### 11.7 Winning message and Styling
