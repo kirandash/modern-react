@@ -669,3 +669,5 @@
 
 ### 12.3 Winning state of Game
 1. Check if every cell has turned off
+
+### 12.4 Styling and Refactoring
