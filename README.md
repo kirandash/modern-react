@@ -665,3 +665,7 @@
 ### 12.1 Displaying the Game Board
 
 ### 12.2 Flipping cells
+1. Flip clicked and neighbor cells
+
+### 12.3 Winning state of Game
+1. Check if every cell has turned off
