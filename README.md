@@ -661,4 +661,7 @@
 ### 11.7 Winning message and Styling
 
 ## 12 Lights out
+
 ### 12.1 Displaying the Game Board
+
+### 12.2 Flipping cells
