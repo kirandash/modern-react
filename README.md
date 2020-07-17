@@ -671,3 +671,20 @@
 1. Check if every cell has turned off
 
 ### 12.4 Styling and Refactoring
+
+## 13 Forms
+1. Build Forms
+2. Understand Controlled components
+
+### 13.1 Intro to React Forms
+1. **Forms**:
+    - HTML form elements work differently than other DOM elements in React.
+        - Form elements naturally keep some internal state. Ex: firstname, lastname etc which will be submitted on form submit.
+2. **Controlled Component**:
+    - Provides a way for React to:
+        - handle submission of form
+        - has access to the data the user entered
+    - Thus react having full control over form
+3. How Controlled Form works?
+    - Value for form element is set from state e.g. `this.state.fullName` - making the React state the truth of truth.
+    - `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
