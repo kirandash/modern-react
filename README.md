@@ -688,3 +688,12 @@
 3. How Controlled Form works?
     - Value for form element is set from state e.g. `this.state.fullName` - making the React state the truth of truth.
     - `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
+
+### 13.2 Forms with Multiple Inputs
+1. For `handleChange(evt) {}` event we will use the ES2015 Feature: **computed property names**
+    -   ES2015 introduced a few object enhancements.
+        - It includes the ability to create objects with dynamic keys based on JS expressions.
+        - The feature is called computed property names
+    - Ex: ES5: `var dogData = {}; var microchip = 12345678; dogData[microchip] = "Stella"`
+    - Ex: ES2015: `let microchip = 12345678; let dogData = {[microchip]: "Stella"}` No need to use array assignment like earlier, property name can be directly computed in Object with `[]`
+2. Make sure input names and properties names in state are same.
