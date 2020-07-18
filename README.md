@@ -712,3 +712,8 @@
 
 ## 14. Forms - Exercise
 1. Create a form that will help us create a box on DOM with specific layout.
+
+### 14.1 BoxList, Box component
+### 14.2 BoxForm Component
+### 14.3 Removing color boxes
+1. For removing box: for unique id: we will use uuid
