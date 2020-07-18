@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ShoppingListForm from "./ShoppingListForm";
-import uuid from "uuid/v4";
+import { v4 as uuid } from 'uuid';
 
 class ShoppingList extends Component {
   constructor(props) {

@@ -703,3 +703,9 @@
 
 ### 13.4 Passing data upwards
 1. Send form data From ShoppinglistForm.js to ShoppingList.js
+
+### 13.5 UUID library
+1. Docs: https://github.com/uuidjs/uuid
+2. `npm install uuid`
+3. ShoppingList.js: `import { v4 as uuid } from 'uuid';`
+4. `id: uuid()` generates unique id across application.
