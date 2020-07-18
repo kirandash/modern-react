@@ -719,3 +719,15 @@
 1. For removing box: for unique id: we will use uuid
 
 ## 15. Forms - Exercise - ToDo
+### 15.1 TodoList and Todo.js
+### 15.2 Adding NewTodoForm.js
+
+### 15.3 Removing Todos
+1. Usee uuid
+
+### 15.4 Editing Todos
+1. Todo.js: Show another form in edit mode
+
+### 15.5 Toggling Todo completion
+
+### 15.6 Styling
