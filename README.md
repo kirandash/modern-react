@@ -697,3 +697,9 @@
     - Ex: ES5: `var dogData = {}; var microchip = 12345678; dogData[microchip] = "Stella"`
     - Ex: ES2015: `let microchip = 12345678; let dogData = {[microchip]: "Stella"}` No need to use array assignment like earlier, property name can be directly computed in Object with `[]`
 2. Make sure input names and properties names in state are same.
+
+### 13.3 htmlFor attribute
+1. In default HTML label should have `for` tag matching id of input. But in react since `for` keyword is reserved for for loops, we must use `htmlFor` instead. just like `className and class`
+
+### 13.4 Passing data upwards
+1. Send form data From ShoppinglistForm.js to ShoppingList.js

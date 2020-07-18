@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Form from './Form';
 import MultipleForm from './MultipleForm';
+import ShoppingList from './ShoppingList';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Form />
       <h1>13.2 Forms with Multiple Inputs</h1>
       <MultipleForm />
+      <h1>13.4 Passing data upwards</h1>
+      <ShoppingList />
     </div>
   );
 }
