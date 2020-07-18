@@ -709,3 +709,6 @@
 2. `npm install uuid`
 3. ShoppingList.js: `import { v4 as uuid } from 'uuid';`
 4. `id: uuid()` generates unique id across application.
+
+## 14. Forms - Exercise
+1. Create a form that will help us create a box on DOM with specific layout.
