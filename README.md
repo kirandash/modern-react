@@ -763,3 +763,6 @@
 2. `npm install axios`: for making API calls
 3. React Doc suggests that API calls and setStates should be done in componentDidMount. It will work in constructor but not recommended. (For complicated reasons)
     - Read more at: https://github.com/reactjs/reactjs.org/issues/302
+
+### 17.3 Adding animation loaders
+1. Show loader at first and hide after API call is finished
