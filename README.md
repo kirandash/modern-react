@@ -779,3 +779,9 @@
         - syncing up with localStorage
         - autosaving
         - updating DOM for controlled components
+
+### 17.6 PrevProps and PrevState in ComponentDidUpdate
+1. `componentDidUpdate()`:
+    - This method is called after every render occurs
+    - We can do a comparisio b/w previous and current props and state: `componentDidUpdate(prevProps, prevState)
+    - Note: componentDidUpdate will call every time component is updated. So any code written under it might execute repeatedly. Which might cause a performance issue. To fix this, we should add some conditions to check and run code only if prevState or prevProps are different than current props or state.
