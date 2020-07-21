@@ -755,3 +755,4 @@
 1. This method runs after the component is mounted.
 2. "Mounting" is the first time the component is rendered to DOM.
 3. Note: If we setState or do any other update in componentDidMount, it will re-render the component.
+4. Note: constructor and render method are called twice in React strict mode to make sure that there are no bugs. `<ReactStrictMode>` can be removed in index.js: if we don't want this explicit feature.
