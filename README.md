@@ -756,3 +756,10 @@
 2. "Mounting" is the first time the component is rendered to DOM.
 3. Note: If we setState or do any other update in componentDidMount, it will re-render the component.
 4. Note: constructor and render method are called twice in React strict mode to make sure that there are no bugs. `<ReactStrictMode>` can be removed in index.js: if we don't want this explicit feature.
+5. Note: Although we can set state/perform AJAX calls etc in constructor. Bt it is recommended to do such actions in componentDidMount
+
+### 17.2 Load data via AJAX - componentDidMount
+1. `componentDidMount` is also quite useful for making AJAX requests when the component is mounted.
+2. `npm install axios`: for making API calls
+3. React Doc suggests that API calls and setStates should be done in componentDidMount. It will work in constructor but not recommended. (For complicated reasons)
+    - Read more at: https://github.com/reactjs/reactjs.org/issues/302
