@@ -731,3 +731,27 @@
 ### 15.5 Toggling Todo completion
 
 ### 15.6 Styling
+
+## 16. Exercise - Yahtzee
+
+## 17. React Life Cycle Methods
+1. Component life cycle
+2. mounting, updating and unmounting
+3. less commonly used life cycles
+
+1. **Component life cycle**:
+    - Every component comes with methods that allow developers to update application state & reflect the changes to the UI before/after key react "events"
+    - 3 main phases
+        - mounting, updating, unmounting.
+2. React methods call sequence:
+    - Diagram: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+    - constructor()
+        - often used for initializing state or binding event handlers to class instance.
+    - render()
+        - After constructor, react calls render(). It tells React what should be displayed. React updates the DOM to match the output of render().
+
+
+### 17.1 componentDidMount
+1. This method runs after the component is mounted.
+2. "Mounting" is the first time the component is rendered to DOM.
+3. Note: If we setState or do any other update in componentDidMount, it will re-render the component.
