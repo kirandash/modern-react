@@ -766,3 +766,7 @@
 
 ### 17.3 Adding animation loaders
 1. Show loader at first and hide after API call is finished
+
+### 17.4 Loading data with async functions
+1. `async componentDidMount() {} and await`:
+    - async await is a much cleaner approach to handle async calls than using `.then` method.
