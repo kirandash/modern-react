@@ -12,6 +12,9 @@ class Timer extends Component {
             this.setState({ time: new Date() })
         }, 1000); // Will update state and thus will call render method again
     }
+    componentWillUnmount(){
+        clearIntervalI(this.timerID);
+    }
     render() {
         console.log("IN RENDER!");
         return (

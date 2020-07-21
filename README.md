@@ -785,3 +785,13 @@
     - This method is called after every render occurs
     - We can do a comparisio b/w previous and current props and state: `componentDidUpdate(prevProps, prevState)
     - Note: componentDidUpdate will call every time component is updated. So any code written under it might execute repeatedly. Which might cause a performance issue. To fix this, we should add some conditions to check and run code only if prevState or prevProps are different than current props or state.
+
+### 17.7 componentWillUnmount()
+1. componentWillUnmount() is invoked immediately before a component is unmounted and destroyed. 
+2. Perform any necessary cleanup in this method, such as 
+    - invalidating timers, 
+    - canceling network requests, 
+    - or cleaning up any subscriptions that were created in componentDidMount()
+3. calling `setState` here is useless. There will be no re-rendering after this.
+4. Application example:
+    - clear the timer whenever clock is removed `componentWillUnmount(){ clearIntervalI(this.timerID); }`
