@@ -743,13 +743,13 @@
     - Every component comes with methods that allow developers to update application state & reflect the changes to the UI before/after key react "events"
     - 3 main phases
         - mounting, updating, unmounting.
-2. React methods call sequence:
+2. React Mounting sequence:
     - Diagram: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
     - constructor()
         - often used for initializing state or binding event handlers to class instance.
     - render()
         - After constructor, react calls render(). It tells React what should be displayed. React updates the DOM to match the output of render().
-
+    - componentDidMount
 
 ### 17.1 componentDidMount
 1. This method runs after the component is mounted.
@@ -770,3 +770,12 @@
 ### 17.4 Loading data with async functions
 1. `async componentDidMount() {} and await`:
     - async await is a much cleaner approach to handle async calls than using `.then` method.
+
+### 17.5 componentDidUpdate
+1. Updating ( new props viz if parent state changes: child props will change, setState(), forceUpdate() ) ---> render() ---> componentDidUpdate()
+2. Updating:
+    - This is a suitable place to implement any side effect operations.
+    - Ex: 
+        - syncing up with localStorage
+        - autosaving
+        - updating DOM for controlled components
