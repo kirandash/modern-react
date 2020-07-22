@@ -800,3 +800,6 @@
 ### 18.1 Requesting a Deck ID from API
 1. `npm install axios`
 2. api endpoint: https://deckofcardsapi.com/api/deck/new/shuffle
+
+### 18.2 Fetching new cards with AJAX
+1. On btn click, call API with axios, async - await.
