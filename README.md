@@ -795,3 +795,6 @@
 3. calling `setState` here is useless. There will be no re-rendering after this.
 4. Application example:
     - clear the timer whenever clock is removed `componentWillUnmount(){ clearIntervalI(this.timerID); }`
+
+## 18 Life Cycle Methods & API exercise - Card dealer
+### 18.1 Requesting a Deck ID
