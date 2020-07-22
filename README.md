@@ -797,4 +797,6 @@
     - clear the timer whenever clock is removed `componentWillUnmount(){ clearIntervalI(this.timerID); }`
 
 ## 18 Life Cycle Methods & API exercise - Card dealer
-### 18.1 Requesting a Deck ID
+### 18.1 Requesting a Deck ID from API
+1. `npm install axios`
+2. api endpoint: https://deckofcardsapi.com/api/deck/new/shuffle
