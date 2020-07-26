@@ -811,3 +811,5 @@
 1. Adding translate and rotation to individual card image
 
 ### 18.5 Styling
+
+## 19 Dad Jokes
