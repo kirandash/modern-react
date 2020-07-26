@@ -822,3 +822,6 @@
 1. https://cssgradient.io/
 
 ### 19.3 Upvoting and Downvoting Jokes
+
+### 19.4 Styling Joke Component
+1. emoji css: https://emoji-css.afeld.me/
