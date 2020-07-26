@@ -813,3 +813,7 @@
 ### 18.5 Styling
 
 ## 19 Dad Jokes
+### 19.1 Fetching new jokes from API
+1. API: https://icanhazdadjoke.com/
+2. `npm install axios`
+3. JokeList.js
