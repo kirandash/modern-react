@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import uuid from 'uuid/v4'
+
 import "./JokeList.css";
+import Joke from './Joke';
 
 class JokeList extends Component {
     static defaultProps = {
@@ -17,10 +20,15 @@ class JokeList extends Component {
             let res = await axios.get("https://icanhazdadjoke.com/", {
                 headers: { Accept: 'application/json' }
             })
-            jokes.push(res.data.joke)
+            jokes.push({ id: uuid(), text: res.data.joke, votes: 0 })
         } // while loop not for loop
         this.setState({ jokes: jokes })
         console.log(jokes)
+    }
+    handleVote (id, delta) {
+        this.setState(st => ({
+            jokes: st.jokes.map(j => j.id === id ? {...j, votes: j.votes + delta} : j)    
+        }))
     }
     render() {
         return (
@@ -36,9 +44,13 @@ class JokeList extends Component {
                 </div>
                 <div className="JokeList-jokes">
                     {this.state.jokes.map(j => (
-                        <div>
-                            {j}
-                        </div>
+                        <Joke 
+                            key={j.id} 
+                            text={j.text} 
+                            votes={j.votes} 
+                            upvote={() => this.handleVote(j.id, 1)}
+                            downvote={() => this.handleVote(j.id, -1)}
+                        />
                     ))}
                 </div>
             </div>

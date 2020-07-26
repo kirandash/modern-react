@@ -820,3 +820,5 @@
 
 ### 19.2 Styling
 1. https://cssgradient.io/
+
+### 19.3 Upvoting and Downvoting Jokes
