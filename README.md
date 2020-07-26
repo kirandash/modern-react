@@ -830,3 +830,6 @@
 
 ### 19.6 Syncing with Localstorage
 1. Store jokes from API call in localStorage and if localStorage has 10 jokes, no more API call is reqd
+
+### 19.7 Fetch Jokes and add to existing list
+1. Also fix votes bug by storing data into localStorage after up/down vote
