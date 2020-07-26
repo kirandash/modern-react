@@ -833,3 +833,5 @@
 
 ### 19.7 Fetch Jokes and add to existing list
 1. Also fix votes bug by storing data into localStorage after up/down vote
+
+### 19.8 Loading spinner
