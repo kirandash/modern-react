@@ -809,3 +809,5 @@
 
 ### 18.4 Randomly Transforming Cards
 1. Adding translate and rotation to individual card image
+
+### 18.5 Styling
