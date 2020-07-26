@@ -827,3 +827,6 @@
 1. emoji css: https://emoji-css.afeld.me/
 
 ### 19.5 Dynamic color & emojis
+
+### 19.6 Syncing with Localstorage
+1. Store jokes from API call in localStorage and if localStorage has 10 jokes, no more API call is reqd
