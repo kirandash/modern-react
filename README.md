@@ -806,3 +806,6 @@
 
 ### 18.3 Add Card component
 1. Card.js - stateless class component
+
+### 18.4 Randomly Transforming Cards
+1. Adding translate and rotation to individual card image
