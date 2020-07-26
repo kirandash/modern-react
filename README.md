@@ -825,3 +825,5 @@
 
 ### 19.4 Styling Joke Component
 1. emoji css: https://emoji-css.afeld.me/
+
+### 19.5 Dynamic color & emojis
