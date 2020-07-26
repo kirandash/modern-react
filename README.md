@@ -817,3 +817,6 @@
 1. API: https://icanhazdadjoke.com/
 2. `npm install axios`
 3. JokeList.js
+
+### 19.2 Styling
+1. https://cssgradient.io/
