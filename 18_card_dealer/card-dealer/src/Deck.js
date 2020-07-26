@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import Card from './Card';
 import axios from 'axios'
 const API_BASE_URL = 'https://deckofcardsapi.com/api/deck';
 
 class Deck extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = { deck: null, drawn: [] }
         this.getCard = this.getCard.bind(this);
@@ -12,11 +13,11 @@ class Deck extends Component {
         let deck = await axios.get(`${API_BASE_URL}/new/shuffle/`);
         this.setState({ deck: deck.data });
     }
-    async getCard(){
+    async getCard() {
         // make request using deck id
         try {
             let cardRes = await axios.get(`${API_BASE_URL}/${this.state.deck.deck_id}/draw/`);
-            if(!cardRes.data.success) { // or remaining: 0 or cards.length = 0
+            if (!cardRes.data.success) { // or remaining: 0 or cards.length = 0
                 throw new Error("No card remaining!")
             } // on throwing error, subsequent lines won't execute
             console.log(cardRes.data);
@@ -26,23 +27,27 @@ class Deck extends Component {
                 drawn: [
                     ...st.drawn,
                     {
-                    id: card.code, 
-                    image: card.image, 
-                    name: `${card.value} of ${card.suit}`
+                        id: card.code,
+                        image: card.image,
+                        name: `${card.value} of ${card.suit}`
                     }
                 ]
             }))
         }
-        catch(err) {
+        catch (err) {
             alert(err);
         }
     }
 
     render() {
+        const cards = this.state.drawn.map(c => (
+            <Card key={c.id} name={c.name} image={c.image} />
+        ));
         return (
             <div>
                 <h1>Card Dealer</h1>
                 <button onClick={this.getCard}>Get Card!</button>
+                {cards}
             </div>
         )
     }

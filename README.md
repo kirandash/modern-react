@@ -803,3 +803,6 @@
 
 ### 18.2 Fetching new cards with AJAX
 1. On btn click, call API with axios, async - await.
+
+### 18.3 Add Card component
+1. Card.js - stateless class component
