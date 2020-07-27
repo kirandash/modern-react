@@ -960,3 +960,8 @@
 
 ### 22.6 Redirecting using props.history.push
 1. Note: make sure that routeProps are available to FoodSearch.js. So pass prop using render or component prop in App.js
+
+### 22.7 Redirect vs History
+1. Redirect: The navigation through redirect is not recorded in browser history.
+2. props.history.push: navigation is recorded in browser history.
+3. Note: Important to avoid history.push in cases where user might end up in infinite loop on same page and won't be able to click browser's back button to go to prev page. So in such cases: better use Redirect

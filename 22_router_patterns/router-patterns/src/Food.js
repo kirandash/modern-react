@@ -4,6 +4,7 @@ import "./Food.css";
 class Food extends Component {
   render() {
     const name = this.props.match.params.name;
+    // if(/\d/.test(name)) this.props.history.push("/notfound");
     const url = `https://source.unsplash.com/1600x900/?${name}`;
     return (
       <div className='Food'>
