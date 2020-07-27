@@ -872,6 +872,7 @@
     - Aviator, Backbone, component-router, Finch, mvc-router etc.
 3. React Router Docs
     - https://reactrouter.com/
+    - https://reactrouter.com/web/guides/quick-start
 4. Install: `npm install --save react-router-dom`
 5. Including the Router with BrowserRouter and Route:
     - Wrap `<App/>` renders with a `<BrowserRouter>` in index.js file
@@ -892,3 +893,9 @@
     - Instead of `href` attribute, `<Link>` uses `to` prop.
     - Clicking on `<Link>` does not issue a GET request.
         - JS intercepts click and does client-side routing.
+
+### 20.5 NavLink Component - activeClassName and exact
+1. `<NavLink>` is just like `<Link>`, with one additional feature.
+    - Based on active page the link will get a CSS class of active
+    - Can stylize using the `activeStyle` or `activeClassName` props
+2. Note: activeClassName will be added for any matches. To make it appear only for exact match pass the exact attribute
