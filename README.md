@@ -841,3 +841,14 @@
 
 ### 19.10 Sorting Jokes
 1. Use sort method: `sort((a,b) => b.votes - a.votes)`
+
+## 20. React Router
+1. Client side routing and it's uses
+2. Client side vs server side routing
+3. Client side routing with React
+
+### 20.1 Intro to Client side routing
+1. **Server side routing:**
+    - Traditional routing is "Server side routing".
+        - Ex: clicking a <a> link causes browser to request a new page & replace entire DOM.
+    - Server decides what HTML to return based on URL requested, entire page refreshes.
