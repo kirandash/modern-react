@@ -884,3 +884,11 @@
 3. Add exact to make sure the component is shown only on exact match.
     - Alternate solution: Change order to make sure the match works
 4. Rule of Thumb: Add exact to all routes unless there is a valid reason not to. Also put all Routes in Switch since most of the time we want only one Route to be active at a time.
+
+### 20.4 Link Component to replace anchor tag
+1. Navigating with anchor tags causes page re-rendering and thus not client side rendering. As it sends GET request to server.
+2. Sol: Link Component
+    - The `<Link>` component acts as a replacement for `<a>` tags.
+    - Instead of `href` attribute, `<Link>` uses `to` prop.
+    - Clicking on `<Link>` does not issue a GET request.
+        - JS intercepts click and does client-side routing.
