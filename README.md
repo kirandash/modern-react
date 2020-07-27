@@ -835,3 +835,6 @@
 1. Also fix votes bug by storing data into localStorage after up/down vote
 
 ### 19.8 Loading spinner
+
+### 19.9 Preventing Duplicate Jokes
+1. use a Set - array with unique items only
