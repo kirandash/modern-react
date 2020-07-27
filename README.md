@@ -936,3 +936,6 @@
 3. URL params are available at: `routeProps.match.params.name`
 4. Note: Now, the food component is not reusable as normal component with props. And only suitable as a component with Route url params. So plan accordingly.
 5. Note: route props are automatically passed if we use Route with component prop. But if we want additional props to be passed, we must use render prop instead of component.
+
+### 22.2 Multiple Route Params
+1. `path='/food/:foodName/drink/:drinkName'`
