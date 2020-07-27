@@ -913,3 +913,5 @@
 
 ## 21 React Router Vending Machine Exercise
 ### 21.1 Adding the Vending M/c routes
+1. Add BrowserRouter to index.js and wrap App component with it.
+2. Add Switch and Route to App.js for individual components. (also mention exact prop)
