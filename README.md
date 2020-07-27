@@ -838,3 +838,6 @@
 
 ### 19.9 Preventing Duplicate Jokes
 1. use a Set - array with unique items only
+
+### 19.10 Sorting Jokes
+1. Use sort method: `sort((a,b) => b.votes - a.votes)`
