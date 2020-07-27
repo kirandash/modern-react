@@ -956,4 +956,7 @@
     - Useful after certain user actions e.g. submitting a form
 2. How to Redirect
     - `<Redirect>` component: using a component in JSX
-    - 
+    - calling `.push` method on `history` route prop
+
+### 22.6 Redirecting using props.history.push
+1. Note: make sure that routeProps are available to FoodSearch.js. So pass prop using render or component prop in App.js

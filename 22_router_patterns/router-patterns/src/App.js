@@ -16,7 +16,8 @@ function App() {
         {/* <Route exact path='/food/:name' render={routeProps => <Food {...routeProps} />} /> */}
         {/* <Route exact path='/food/:name' component={Food} /> */}
         {/* use render if additional props are to be sent with routeProps */}
-        <Route exact path="/" render={() => <FoodSearch />} />
+        <Route exact path="/" render={(routeProps) => <FoodSearch {...routeProps} />} />
+        {/* <Route exact path="/" component={FoodSearch} /> */}
         <Route
           exact
           path='/food/:name'
