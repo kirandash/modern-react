@@ -939,3 +939,10 @@
 
 ### 22.2 Multiple Route Params
 1. `path='/food/:foodName/drink/:drinkName'`
+
+### 22.3 Including 404 - Not Found / catch all Route
+1. Add Route with no path to the bottom of list of Routes. 
+    - Note: 
+        - Add Switch to make sure only one Route is accessible at a time.
+        - Order is important. It must be at the very bottom.
+2. The last route will catch all Routes other than the one mentioned. and show the 404 content.
