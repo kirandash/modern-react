@@ -965,3 +965,12 @@
 1. Redirect: The navigation through redirect is not recorded in browser history.
 2. props.history.push: navigation is recorded in browser history.
 3. Note: Important to avoid history.push in cases where user might end up in infinite loop on same page and won't be able to click browser's back button to go to prev page. So in such cases: better use Redirect
+
+### 22.8 withRouter Higher Order Component
+1. To use props.history.push from a component which is not part of Route.
+2. Navbar.js - Wrap Navbar component with withRouter. It tells React to make react-router features available for the Navbar component although it is not defined as Route.
+
+### 22.9 Implementing a back button
+1. `this.props.history.goBack`
+2. `this.props.history.goForward`
+3. Check all methods on React props list

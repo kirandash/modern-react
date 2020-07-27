@@ -5,10 +5,12 @@ import Food from './Food';
 import './App.css';
 import Meal from './Meal';
 import FoodSearch from './FoodSearch';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Switch>
         {/* <Route exact path='/food/:name' render={() => <Food name='egg' />} /> */}
         {/* <Route exact path='/food/:name' render={routeProps => <Food name='egg' stuff={routeProps} />} /> */}
