@@ -915,3 +915,8 @@
 ### 21.1 Adding the Vending M/c routes
 1. Add BrowserRouter to index.js and wrap App component with it.
 2. Add Switch and Route to App.js for individual components. (also mention exact prop)
+
+### 21.2 Adding Links
+
+### 21.3 Creating the Navbar with NavLink
+1. Use NavLink instead of Link to show activeClassName. Also pass exact prop to make sure active class appears only with exact match.
