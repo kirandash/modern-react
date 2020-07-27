@@ -949,3 +949,11 @@
 
 ### 22.4 Writing a simple search form
 1. FoodSearch.js
+
+### 22.5 The Redirect component
+1. **Client side redirects**
+    - With React Router we can mimic behavior of server-side redirects.
+    - Useful after certain user actions e.g. submitting a form
+2. How to Redirect
+    - `<Redirect>` component: using a component in JSX
+    - 
