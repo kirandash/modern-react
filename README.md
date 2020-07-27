@@ -920,3 +920,12 @@
 
 ### 21.3 Creating the Navbar with NavLink
 1. Use NavLink instead of Link to show activeClassName. Also pass exact prop to make sure active class appears only with exact match.
+
+### 21.4 props.Children
+1. Used to create common wrapper across application.
+2. Can get content with `{this.props.children}`
+3. Wrap content in individual components: Sardines.js, Soda.js etc.
+
+## 22 React Router Patterns
+### 22.1 Working with URL params
+1. URL parameters
