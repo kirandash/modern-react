@@ -876,3 +876,11 @@
 5. Including the Router with BrowserRouter and Route:
     - Wrap `<App/>` renders with a `<BrowserRouter>` in index.js file
     - In App.js where components will be rendered, use `Route` to map path to a component.
+
+### 20.3 Using Switch and Exact
+1. React tries to match as many things as possible in the Route. So for /dog: both About and Dog component will be shown.
+2. Solution: Use **Switch** around Route. So at any time only one Route will be shown.
+    - Note: The first match will be shown. So, order does matter.
+3. Add exact to make sure the component is shown only on exact match.
+    - Alternate solution: Change order to make sure the match works
+4. Rule of Thumb: Add exact to all routes unless there is a valid reason not to. Also put all Routes in Switch since most of the time we want only one Route to be active at a time.

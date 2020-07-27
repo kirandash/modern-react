@@ -1,18 +1,23 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import './App.css';
 import About from './About';
 import Contact from './Contact';
 import Dog from './Dog';
 
+const Hater = () => <h1>I ABSOLUTELY HATE DOGS!</h1>;
+
 class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/dog" component={Dog} />
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/dog" component={Dog} />
+          <Route exact path="/dog/hater" component={Hater} />
+        </Switch>
       </div>
     );
   }
