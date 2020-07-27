@@ -905,3 +905,11 @@
     - When you use component prop, the component is instantiated per every call of Route#render. It means that, for your component that you pass to component prop of Route, constructor, componentWillMount, and componentDidMount will be executed every time the route is rendered.
 2. render props:
     - Compared to that, if you use render prop, the component is evaluated on every Route#render. Remember that every component is a function? This function will be executed as is, without any lifecycle methods.
+3. Docs:
+    - https://stackoverflow.com/questions/48150567/react-router-difference-between-component-and-render
+4. **Rule of Thumb:**
+    - If no props is being passed: use component as prop
+    - If props is being passed: use render as prop
+
+## 21 React Router Vending Machine Exercise
+### 21.1 Adding the Vending M/c routes

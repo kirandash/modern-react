@@ -29,7 +29,9 @@ class App extends React.Component {
           <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
           {/* <Route exact path="/dog" component={Dog} /> */}
+          {/* Component will instantiate a new Dog every time. as this creates a component */}
           <Route exact path="/dog/c" component={() => <Dog name='Stella' />} />
+          {/* Render will re-use the existing dog component. as this is directly calling the render method */}
           <Route exact path="/dog/r" render={() => <Dog name='Zimmy' />} />
           <Route exact path="/dog/hater" component={Hater} />
         </Switch>
