@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
+import Food from './Food';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Route exact path='/food/:name' render={() => <Food name='egg' />} /> */}
+      {/* <Route exact path='/food/:name' render={routeProps => <Food name='egg' stuff={routeProps} />} /> */}
+      {/* <Route exact path='/food/:name' render={routeProps => <Food name={routeProps.match.params.name} />} /> */}
+      {/* <Route exact path='/food/:name' render={routeProps => <Food {...routeProps} />} /> */}
+      {/* <Route exact path='/food/:name' component={Food} /> */}
+      <Route exact path='/food/:name' render={routeProps => <Food authenticated={true} {...routeProps} />} />
     </div>
   );
 }

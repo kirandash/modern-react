@@ -927,5 +927,12 @@
 3. Wrap content in individual components: Sardines.js, Soda.js etc.
 
 ## 22 React Router Patterns
-### 22.1 Working with URL params
+### 22.1 Working with URL params - props.match.params.name
 1. URL parameters
+    - "/food/:name" everything following colon is treated as a URL param
+2. React route props:
+    - https://reactrouter.com/web/api/Route/route-props
+    - match, location, history
+3. URL params are available at: `routeProps.match.params.name`
+4. Note: Now, the food component is not reusable as normal component with props. And only suitable as a component with Route url params. So plan accordingly.
+5. Note: route props are automatically passed if we use Route with component prop. But if we want additional props to be passed, we must use render prop instead of component.
