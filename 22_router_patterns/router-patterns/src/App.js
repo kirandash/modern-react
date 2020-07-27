@@ -4,6 +4,7 @@ import Food from './Food';
 
 import './App.css';
 import Meal from './Meal';
+import FoodSearch from './FoodSearch';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         {/* <Route exact path='/food/:name' render={routeProps => <Food {...routeProps} />} /> */}
         {/* <Route exact path='/food/:name' component={Food} /> */}
         {/* use render if additional props are to be sent with routeProps */}
-        <Route exact path="/" render={() => <h1>Home Page</h1>} />
+        <Route exact path="/" render={() => <FoodSearch />} />
         <Route
           exact
           path='/food/:name'

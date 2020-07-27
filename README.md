@@ -946,3 +946,6 @@
         - Add Switch to make sure only one Route is accessible at a time.
         - Order is important. It must be at the very bottom.
 2. The last route will catch all Routes other than the one mentioned. and show the 404 content.
+
+### 22.4 Writing a simple search form
+1. FoodSearch.js
