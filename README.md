@@ -898,4 +898,10 @@
 1. `<NavLink>` is just like `<Link>`, with one additional feature.
     - Based on active page the link will get a CSS class of active
     - Can stylize using the `activeStyle` or `activeClassName` props
-2. Note: activeClassName will be added for any matches. To make it appear only for exact match pass the exact attribute
+2. Note: activeClassName will be added for any matches. To make it appear only for exact match pass the exact prop
+
+### 20.6 Render props vs component props in Router
+1. component props:
+    - When you use component prop, the component is instantiated per every call of Route#render. It means that, for your component that you pass to component prop of Route, constructor, componentWillMount, and componentDidMount will be executed every time the route is rendered.
+2. render props:
+    - Compared to that, if you use render prop, the component is evaluated on every Route#render. Remember that every component is a function? This function will be executed as is, without any lifecycle methods.
