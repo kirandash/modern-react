@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import About from './About';
+import Contact from './Contact';
+import Dog from './Dog';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = { page: "about" }; // Default page - about
+  }
+  changePage(newPage) {
+    this.setState({ page: newPage });
+  }
+  renderPage(){
+    if(this.state.page === 'about') return <About />
+    else if(this.state.page === 'dog') return <Dog />
+    else if(this.state.page === 'contact') return <Contact />
+  }
+  render(){
+    return (
+      <div className="App">
+        <nav className='App-nav'>
+          <a onClick={() => this.changePage("about")}>About</a>
+          <a onClick={() => this.changePage("dog")}>Dog</a>
+          <a onClick={() => this.changePage("contact")}>Contact</a>
+        </nav>
+        {/* <About />
+        <Contact />
+        <Dog /> */}
+        {this.renderPage()}
+      </div>
+    );
+  }
 }
 
 export default App;

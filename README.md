@@ -847,8 +847,15 @@
 2. Client side vs server side routing
 3. Client side routing with React
 
-### 20.1 Intro to Client side routing
+### 20.1 Intro to Client side routing and Routing with state
 1. **Server side routing:**
     - Traditional routing is "Server side routing".
         - Ex: clicking a <a> link causes browser to request a new page & replace entire DOM.
     - Server decides what HTML to return based on URL requested, entire page refreshes.
+2. **Client Side Routing:**
+    - We can create routing using only state and click events
+    - Cons: 
+        - The navigations aren't recoreded in browser history. So the browser forward and backward button won't work. 
+        - Also React doesn't like anchor tag without href. Creates warnings.
+        - URL doesn't change on clicking navbar items. Thus, can not bookmark a page.
+    - Sol: **React router**: Which helps us navigate while recording the navigation in browser history.
