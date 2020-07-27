@@ -853,9 +853,26 @@
         - Ex: clicking a <a> link causes browser to request a new page & replace entire DOM.
     - Server decides what HTML to return based on URL requested, entire page refreshes.
 2. **Client Side Routing:**
-    - We can create routing using only state and click events
+    - Routing on browser side without sending any request to server.
+3. **Faking Client Side routing with state:**
+    - We can create routing using only state and click events. It does let us show different pages by coding state in FE without sending any request to server.
     - Cons: 
         - The navigations aren't recoreded in browser history. So the browser forward and backward button won't work. 
         - Also React doesn't like anchor tag without href. Creates warnings.
         - URL doesn't change on clicking navbar items. Thus, can not bookmark a page.
+        - Can't implement more complex route/pattern matching.
     - Sol: **React router**: Which helps us navigate while recording the navigation in browser history.
+
+### 20.2 Client side Routing with React Router DOM
+1. React can give us real Client side routing with React Router DOM.
+    - Client-side routing handles mapping b/w URL bar and the content a user sees via browser than the server.
+    - Ex: SPAs
+    - We use JS to manipulate the URL bar with a Web API called "**history**"
+2. React Router alternatives:
+    - Aviator, Backbone, component-router, Finch, mvc-router etc.
+3. React Router Docs
+    - https://reactrouter.com/
+4. Install: `npm install --save react-router-dom`
+5. Including the Router with BrowserRouter and Route:
+    - Wrap `<App/>` renders with a `<BrowserRouter>` in index.js file
+    - In App.js where components will be rendered, use `Route` to map path to a component.
