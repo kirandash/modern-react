@@ -992,3 +992,8 @@
 
 ### 23.3 DogDetail Component
 1. Write a fn getDog to pass correct dog prop based on Route
+
+### 23.4 Navbar component
+1. Auto populate navigation with dogs names from props.
+2. Use NavLink for active class item
+    - Note: NavLink by default will add a class 'active' which can be changed by using activeClassName prop if reqd.

@@ -8,6 +8,7 @@ import tubby from "./images/tubby.jpg";
 import hazel from "./images/hazel.jpg";
 import DogList from './DogList';
 import DogDetails from './DogDetails';
+import Navbar from './Navbar';
 
 class App extends React.Component {
   static defaultProps = {
@@ -56,6 +57,7 @@ class App extends React.Component {
     }
     return (
       <div>
+        <Navbar dogs={this.props.dogs} />
         <Switch>
           <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
           {/* Note: render method from Route wl pass route props by default */}
