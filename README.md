@@ -975,5 +975,14 @@
 2. `this.props.history.goForward`
 3. Check all methods on React props list
 
-## 23 Exercise - React Router - Dog Finder
+## 23 Exercise - React Router with Bootstrap - Dog Finder
 ### 23.1 Bootstrap in React
+1. https://reactstrap.github.io/ : Bootstrap with React wrapper
+    - `npm install --save reactstrap react react-dom`
+2. Manually install bootstrap: https://getbootstrap.com/
+    - `npm install --save bootstrap`
+    - index.js: `import 'bootstrap`. Test by running app. (This includes only bootstrap js. css must be included separately)
+    - bootstrap needs jquery and popper js as dependencies.
+    - `npm install --save jquery popper.js`
+    - Note: Bootstrap css also must be included manually.
+3. Router: - `npm install --save react-router-dom`
