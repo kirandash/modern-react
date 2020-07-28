@@ -7,6 +7,7 @@ import whiskey from "./images/whiskey.jpg";
 import tubby from "./images/tubby.jpg";
 import hazel from "./images/hazel.jpg";
 import DogList from './DogList';
+import DogDetails from './DogDetails';
 
 class App extends React.Component {
   static defaultProps = {
@@ -45,9 +46,21 @@ class App extends React.Component {
   };
 
   render() {
+    const getDog = props => {
+      // Fn to return current Dog based on route
+      let name = props.match.params.name;
+      let currentDog = this.props.dogs.find(
+        dog => dog.name.toLowerCase() === name.toLowerCase()
+      )
+      return <DogDetails {...props} dog={currentDog} />
+    }
     return (
       <div>
-          <Route path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
+        <Switch>
+          <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
+          {/* Note: render method from Route wl pass route props by default */}
+          <Route exact path='/dogs/:name' render={getDog} />
+        </Switch>
       </div>
     );
   }

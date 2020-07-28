@@ -989,3 +989,6 @@
 
 ### 23.2 DogList Component
 1. DogList component with dog received as props from App.js
+
+### 23.3 DogDetail Component
+1. Write a fn getDog to pass correct dog prop based on Route
