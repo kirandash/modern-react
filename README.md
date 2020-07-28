@@ -1002,3 +1002,8 @@
 1.  Move the Switch and Routes code from App.js to Routes.js file.
 2. Add Redirect to Routes.js as fail safe in case no Route matches.
     - Ex: http://localhost:3000/dogstest
+
+### 23.6 Refactoring
+1. Move container to App.js
+2. Styling
+3. Add links for dog names in DogList.js

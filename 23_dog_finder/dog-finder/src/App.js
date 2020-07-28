@@ -63,7 +63,9 @@ class App extends React.Component {
           <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
           <Route exact path='/dogs/:name' render={getDog} />
         </Switch> */}
-        <Routes dogs={this.props.dogs} />
+        <div className='container'>
+          <Routes dogs={this.props.dogs} />
+        </div>
       </div>
     );
   }
