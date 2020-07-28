@@ -986,3 +986,6 @@
     - `npm install --save jquery popper.js`
     - Note: Bootstrap css also must be included manually.
 3. Router: - `npm install --save react-router-dom`
+
+### 23.2 DogList Component
+1. DogList component with dog received as props from App.js
