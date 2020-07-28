@@ -1,13 +1,14 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+// import { Switch, Route } from 'react-router-dom';
+import Routes from './Routes'
 
 import './App.css';
 
 import whiskey from "./images/whiskey.jpg";
 import tubby from "./images/tubby.jpg";
 import hazel from "./images/hazel.jpg";
-import DogList from './DogList';
-import DogDetails from './DogDetails';
+// import DogList from './DogList';
+// import DogDetails from './DogDetails';
 import Navbar from './Navbar';
 
 class App extends React.Component {
@@ -47,22 +48,22 @@ class App extends React.Component {
   };
 
   render() {
-    const getDog = props => {
-      // Fn to return current Dog based on route
-      let name = props.match.params.name;
-      let currentDog = this.props.dogs.find(
-        dog => dog.name.toLowerCase() === name.toLowerCase()
-      )
-      return <DogDetails {...props} dog={currentDog} />
-    }
+    // const getDog = props => {
+    //   // Fn to return current Dog based on route
+    //   let name = props.match.params.name;
+    //   let currentDog = this.props.dogs.find(
+    //     dog => dog.name.toLowerCase() === name.toLowerCase()
+    //   )
+    //   return <DogDetails {...props} dog={currentDog} />
+    // }
     return (
       <div>
         <Navbar dogs={this.props.dogs} />
-        <Switch>
+        {/* <Switch>
           <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
-          {/* Note: render method from Route wl pass route props by default */}
           <Route exact path='/dogs/:name' render={getDog} />
-        </Switch>
+        </Switch> */}
+        <Routes dogs={this.props.dogs} />
       </div>
     );
   }

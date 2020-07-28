@@ -997,3 +997,8 @@
 1. Auto populate navigation with dogs names from props.
 2. Use NavLink for active class item
     - Note: NavLink by default will add a class 'active' which can be changed by using activeClassName prop if reqd.
+
+### 23.5 Refactoring and Extracting our Routes, Adding Redirect
+1.  Move the Switch and Routes code from App.js to Routes.js file.
+2. Add Redirect to Routes.js as fail safe in case no Route matches.
+    - Ex: http://localhost:3000/dogstest
