@@ -974,3 +974,6 @@
 1. `this.props.history.goBack`
 2. `this.props.history.goForward`
 3. Check all methods on React props list
+
+## 23 Exercise - React Router - Dog Finder
+### 23.1 Bootstrap in React
