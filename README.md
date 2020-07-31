@@ -1024,3 +1024,5 @@
 9. https://cssinjs.org/?v=v10.3.0: JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way. It can compile in the browser, server-side or at build time in Node.
 
 ### 24.1 Palette Component
+1. Create Palette component - each palette can have: name, id, emoji & colors.
+2. Create seedPalletes.js which will contain all the palletes info in an array of objects.
