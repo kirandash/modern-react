@@ -1029,3 +1029,5 @@
 
 ### 24.2 Color Box Component
 1. Each Palette can have multiple color boxes
+
+### 24.3 Styling Color Box
