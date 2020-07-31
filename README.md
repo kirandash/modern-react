@@ -1026,3 +1026,6 @@
 ### 24.1 Palette Component
 1. Create Palette component - each palette can have: name, id, emoji & colors.
 2. Create seedPalletes.js which will contain all the palletes info in an array of objects.
+
+### 24.2 Color Box Component
+1. Each Palette can have multiple color boxes
