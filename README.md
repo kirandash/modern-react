@@ -1007,3 +1007,20 @@
 1. Move container to App.js
 2. Styling
 3. Add links for dog names in DogList.js
+
+## 24. Color Project
+1. https://flatuicolors.com/ - color picker
+2. https://materialuicolors.co/ - color picker with level
+
+**Tools Used**
+1. https://material-ui.com/: React components for faster and easier web development.
+2. https://github.com/gka/chroma.js: small-ish zero-dependency JavaScript library (13.5kB) for all kinds of color conversions and color scales.
+3. https://github.com/missive/emoji-mart: Emoji Mart is a Slack-like customizable emoji picker component for React
+4. https://github.com/clauderic/react-sortable-hoc: A set of higher-order components to turn any list into an animated, accessible and touch-friendly sortable list.
+5. https://github.com/nkbt/react-copy-to-clipboard: Copy to clipboard React component
+6. React Pure Component: https://reactjs.org/docs/react-api.html#reactpurecomponent
+7. https://github.com/NewOldMax/react-form-validator-core#readme : Simple form validation component for react forms
+8. https://github.com/reactjs/react-transition-group: A set of components for managing component states (including mounting and unmounting) over time, specifically designed with animation in mind.
+9. https://cssinjs.org/?v=v10.3.0: JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way. It can compile in the browser, server-side or at build time in Node.
+
+### 24.1 Palette Component
