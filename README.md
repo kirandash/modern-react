@@ -1031,3 +1031,8 @@
 1. Each Palette can have multiple color boxes
 
 ### 24.3 Styling Color Box
+
+### 24.4 Copy To Clipboard
+1. https://www.npmjs.com/package/react-copy-to-clipboard
+2. `npm install --save react-copy-to-clipboard`
+3. Wrap the element with `CopyToClipboard` and mention the data to copy in `text` prop.
