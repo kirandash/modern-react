@@ -1049,3 +1049,6 @@
 ### 24.7 Adding Color Slider using rc-slider
 1. `npm install rc-slider`
 2. Docs for usage: https://github.com/react-component/slider/
+
+### 24.8 Styling the Color Slider
+1. Make sure our style comes after rc-slider css so overwriting works.
