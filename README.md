@@ -1045,3 +1045,7 @@
 1. Manipulating colors is difficult. Better to handle with library viz: chroma.js
     - https://gka.github.io/chroma.js/
 2. `npm install chroma-js`
+
+### 24.7 Adding Color Slider using rc-slider
+1. `npm install rc-slider`
+2. Docs for usage: https://github.com/react-component/slider/
