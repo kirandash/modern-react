@@ -1052,3 +1052,6 @@
 
 ### 24.8 Styling the Color Slider
 1. Make sure our style comes after rc-slider css so overwriting works.
+
+### 24.9 Adding Navbar component
+1.  Create Navbar and move slider from Palette to Navbar.js
