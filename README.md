@@ -1040,3 +1040,8 @@
 ### 24.5 Copy Overlay Animation
 1. Grow the animation from center of box that is clicked.
 2. Animate the text and color code with a transition delay.
+
+### 24.6 Add Color Helper to Generate shades of colors with chroma js
+1. Manipulating colors is difficult. Better to handle with library viz: chroma.js
+    - https://gka.github.io/chroma.js/
+2. `npm install chroma-js`
