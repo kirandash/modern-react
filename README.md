@@ -1036,3 +1036,7 @@
 1. https://www.npmjs.com/package/react-copy-to-clipboard
 2. `npm install --save react-copy-to-clipboard`
 3. Wrap the element with `CopyToClipboard` and mention the data to copy in `text` prop.
+
+### 24.5 Copy Overlay Animation
+1. Grow the animation from center of box that is clicked.
+2. Animate the text and color code with a transition delay.
