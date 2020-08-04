@@ -1095,4 +1095,6 @@
     - Dynamic CSS
     - Component scoped CSS thus not affecting globally
 
-### 26.2 Styling MiniPalette with JSS
+### 26.2 Styling MiniPalette using withStyles
+
+### 26.3 Styling PaletteList using withStyles
