@@ -1098,3 +1098,5 @@
 ### 26.2 Styling MiniPalette using withStyles
 
 ### 26.3 Styling PaletteList using withStyles
+
+### 26.4 Finishing Style for MiniPalette
