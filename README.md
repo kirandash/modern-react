@@ -1077,3 +1077,6 @@
 
 ### 25.5 Finding Palettes from route
 1. Create findPalette fn in App.js
+
+### 25.6 PaletteList component and Links
+1. Create PaletteList component - should show links for all palettes from seedPalettes
