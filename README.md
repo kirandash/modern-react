@@ -1103,3 +1103,6 @@
 
 ## 27 Color Project - Pt 4
 ### 27.1 Linking to Palettes
+
+### 27.2 Single Color Page and More link on Color Box
+1. For see more link: add stopPropagation to make sure the box/parent click event for copy does not trigger while routing
