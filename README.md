@@ -1065,3 +1065,7 @@
 ### 25.2 Adding Snackbar (Feedback component from MUI) to show feedback
 1. Install MUI icons: `npm install @material-ui/icons`
 2. Add Snackbar to Navbar.js
+
+### 25.3 Add Palette Footer
+1. Add footer to Palette.js 
+2. Style adjustments
