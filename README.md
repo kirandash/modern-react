@@ -1061,3 +1061,7 @@
 1. Docs: https://material-ui.com/
 2. `npm install @material-ui/core`
 3. Select component: https://material-ui.com/components/selects/
+
+### 25.2 Adding Snackbar (Feedback component from MUI) to show feedback
+1. Install MUI icons: `npm install @material-ui/icons`
+2. Add Snackbar to Navbar.js
