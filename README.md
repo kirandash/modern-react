@@ -1100,3 +1100,6 @@
 ### 26.3 Styling PaletteList using withStyles
 
 ### 26.4 Finishing Style for MiniPalette
+
+## 27 Color Project - Pt 4
+### 27.1 Linking to Palettes

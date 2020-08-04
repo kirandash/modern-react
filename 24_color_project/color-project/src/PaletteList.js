@@ -36,6 +36,10 @@ const styles = {
 };
 
 class PaletteList extends Component {
+    goToPalette(id) {
+        // this.props.history will be available via routeProps from App.js
+        this.props.history.push(`/palette/${id}`);
+    }
     render() {
         const { classes, palettes } = this.props;
         return (
@@ -46,7 +50,10 @@ class PaletteList extends Component {
                     </nav>
                     <div className={classes.palettes}>
                         {palettes.map(palette => (
-                            <MiniPalette {...palette} />
+                            // Not a standard practice to wrap entire box with Link
+                            // <Link to={`palette/${palette.id}`}>
+                            <MiniPalette {...palette} handleClick={() => this.goToPalette(palette.id)} />
+                            // </Link>
                         ))}
                     </div>
                 </div>
