@@ -1074,3 +1074,6 @@
 1. `npm install react-router-dom`
 2. Add BrowserRouter to index.js - wrap around App
 3. Add Route and Switch to App.js
+
+### 25.5 Finding Palettes from route
+1. Create findPalette fn in App.js
