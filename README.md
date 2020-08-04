@@ -1069,3 +1069,8 @@
 ### 25.3 Add Palette Footer
 1. Add footer to Palette.js 
 2. Style adjustments
+
+### 25.4 Integrating React Router
+1. `npm install react-router-dom`
+2. Add BrowserRouter to index.js - wrap around App
+3. Add Route and Switch to App.js
