@@ -1055,3 +1055,9 @@
 
 ### 24.9 Adding Navbar component
 1.  Create Navbar and move slider from Palette to Navbar.js
+
+## 25 Color Project - Pt 2
+### 25.1 Install Matrial UI and Add Select component
+1. Docs: https://material-ui.com/
+2. `npm install @material-ui/core`
+3. Select component: https://material-ui.com/components/selects/

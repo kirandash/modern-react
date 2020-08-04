@@ -8,20 +8,25 @@ import './Palette.css' // Make sure our style comes after rc-slider css so overw
 class Palette extends Component {
     constructor(props) {
         super(props);
-        this.state = { level: 500 };
+        this.state = { level: 500, format: "hex" };
         this.changeLevel = this.changeLevel.bind(this)
+        this.changeFormat = this.changeFormat.bind(this)
     }
     changeLevel(level) {
         this.setState({ level })
     }
+    changeFormat(val) {
+        // alert(val)
+        this.setState({ format: val });
+    }
     render() {
         const { colors } = this.props.palette;
-        const { level } = this.state;
+        const { level, format } = this.state;
         // const colorBoxes = this.props.colors.map(color => (
         //   <ColorBox background={color.color} name={color.name} />  
         // ))
         const colorBoxes = colors[level].map(color => (
-            <ColorBox background={color.hex} name={color.name} />
+            <ColorBox background={color[format]} name={color.name} />
         ))
         return (
             <div className='Palette'>
@@ -35,7 +40,11 @@ class Palette extends Component {
                     />
                 </div> */}
                 {/* Navbar goes here */}
-                <Navbar level={level} changeLevel={this.changeLevel} />
+                <Navbar
+                    level={level}
+                    changeLevel={this.changeLevel}
+                    handleChange={this.changeFormat}
+                />
                 <div className='Palette-colors'>
                     {/* Bunch of color boxes */}
                     {colorBoxes}
