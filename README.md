@@ -1094,3 +1094,5 @@
 3. **Benefits**:
     - Dynamic CSS
     - Component scoped CSS thus not affecting globally
+
+### 26.2 Styling MiniPalette with JSS
