@@ -1080,3 +1080,17 @@
 
 ### 25.6 PaletteList component and Links
 1. Create PaletteList component - should show links for all palettes from seedPalettes
+
+## 26 Color Project - Pt 3 - JSS & withStyles
+### 26.1 Introducing withStyles HOC
+1. Writing css in JS file
+    - Styled components (popular package)
+    - withStyles (included in MUI): converts SCSS(SASS) to CSS-In-JS
+2. **withStyles**:
+    - Docs: https://material-ui.com/styles/basics/
+    - `npm install @material-ui/styles`
+    - set of classes with sass structured styles - camelCase and values should be in ""
+    - wrap component with withStyles to make a HOC
+3. **Benefits**:
+    - Dynamic CSS
+    - Component scoped CSS thus not affecting globally
