@@ -1106,3 +1106,6 @@
 
 ### 27.2 Single Color Page and More link on Color Box
 1. For see more link: add stopPropagation to make sure the box/parent click event for copy does not trigger while routing
+
+### 27.3 Creating Single Color Palette
+1. More color palette to show color levels after clicking more on color box

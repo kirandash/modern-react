@@ -18,7 +18,7 @@ class ColorBox extends Component {
         });
     }
     render() {
-        const { name, background } = this.props;
+        const { name, background, moreUrl } = this.props;
         const { copied } = this.state;
         return (
             <CopyToClipboard text={background} onCopy={this.changeCopyState}>
@@ -38,7 +38,7 @@ class ColorBox extends Component {
                     </div>
                     {/* <span className='see-more'>More</span> */}
                     {/* stopPropagation to make sure the box/parent click event for copy does not trigger while routing */}
-                    <Link to='/' onClick={e => e.stopPropagation()}>
+                    <Link to={moreUrl} onClick={e => e.stopPropagation()}>
                         <span className='see-more'>More</span>
                     </Link>
                 </div>
