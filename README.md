@@ -1109,3 +1109,5 @@
 
 ### 27.3 Creating Single Color Palette
 1. More color palette to show color levels after clicking more on color box
+
+### 27.4 Displaying shades in Single Color Palette
