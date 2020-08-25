@@ -1111,3 +1111,5 @@
 1. More color palette to show color levels after clicking more on color box
 
 ### 27.4 Displaying shades in Single Color Palette
+
+### 27.5 Adding Navbar and Footer to SingleColorPalette
