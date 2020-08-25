@@ -1118,3 +1118,6 @@
 
 ### 27.7 Dynamic Text color based on luminance
 1. Use luminance property from chroma js: `chroma(background).luminance()`
+
+### 27.8 Refactor ColorBox styles using withStyles
+1. Use withStyles from material ui and create css dynamically in JS instead of multiple css classes in css.
