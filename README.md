@@ -1121,3 +1121,5 @@
 
 ### 27.8 Refactor ColorBox styles using withStyles
 1. Use withStyles from material ui and create css dynamically in JS instead of multiple css classes in css.
+
+### 27.9 Refactor ColorBox styles using withStyles
