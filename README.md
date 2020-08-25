@@ -1115,3 +1115,6 @@
 ### 27.5 Adding Navbar and Footer to SingleColorPalette
 
 ### 27.6 Add Go Back Link
+
+### 27.7 Dynamic Text color based on luminance
+1. Use luminance property from chroma js: `chroma(background).luminance()`
