@@ -1,4 +1,4 @@
-.Palette {
+/* .Palette {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,8 +6,7 @@
 }
 .Palette-colors {
     height: 90%;
-    /* 90% for palette-colors and remaining height for navbar and footer */
-}
+} */
 .Palette-footer {
     background-color: white;
     height: 5vh;
