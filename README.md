@@ -1130,3 +1130,7 @@
 
 ### 28.3 Move styles out of components into new folder
 1. Move styles from components to separate js file in src/styles folder. To separate component logic and styles code.
+
+### 28.4 Refactor Navbar CSS
+1. Refactor Navbar Styles and Remove CSS
+2. Moving Navbar CSS to withStyles dynamic classes is tricky. Because these class names can not be dynamic and must match class names from material ui for proper overriding.
