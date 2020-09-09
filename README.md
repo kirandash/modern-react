@@ -1137,3 +1137,6 @@
 
 ### 28.5 Adding NewPaletteForm
 1. Form to create and add a new palette
+
+### 28.6 Adding Slide-Out Drawer
+1. https://material-ui.com/components/drawers/#persistent-drawer
