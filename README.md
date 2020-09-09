@@ -1134,3 +1134,6 @@
 ### 28.4 Refactor Navbar CSS
 1. Refactor Navbar Styles and Remove CSS
 2. Moving Navbar CSS to withStyles dynamic classes is tricky. Because these class names can not be dynamic and must match class names from material ui for proper overriding.
+
+### 28.5 Adding NewPaletteForm
+1. Form to create and add a new palette
