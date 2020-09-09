@@ -1140,3 +1140,9 @@
 
 ### 28.6 Adding Slide-Out Drawer
 1. https://material-ui.com/components/drawers/#persistent-drawer
+
+### 28.7 Adding Color Picker Component using 'react-color' package
+1. Adding Color Picker component and buttons to drawer
+2. https://casesandberg.github.io/react-color/
+3. `npm install --save react-color`
+4. Add ChromePicker
