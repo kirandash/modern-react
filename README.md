@@ -1127,3 +1127,6 @@
 ## 28 Color Project - Pt 5
 ### 28.1 Refactor Palette Styles
 1. Moving styles from .css to .js file using withStyles from material ui
+
+### 28.3 Move styles out of components into new folder
+1. Move styles from components to separate js file in src/styles folder. To separate component logic and styles code.
