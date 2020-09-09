@@ -1146,3 +1146,5 @@
 2. https://casesandberg.github.io/react-color/
 3. `npm install --save react-color`
 4. Add ChromePicker
+
+### 28.8 Connecting Color Picker to Button
