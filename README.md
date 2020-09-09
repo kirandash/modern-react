@@ -1148,3 +1148,6 @@
 4. Add ChromePicker
 
 ### 28.8 Connecting Color Picker to Button
+
+### 28.9 Creating Draggable Color Box
+1. Color Boxes to show on NewPaletteForm after adding new color Palette. Later we will make it draggable.
