@@ -9,10 +9,19 @@ import PaletteList from './PaletteList';
 import SingleColorPalette from "./SingleColorPalette";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { palettes: seedPalletes };
+    this.savePalette = this.savePalette.bind(this);
+    this.findPalette = this.findPalette.bind(this);
+  }
   findPalette(id) {
-    return seedPalletes.find(function (palette) {
+    return this.state.palettes.find(function (palette) {
       return palette.id === id;
     });
+  }
+  savePalette(newPalette) {
+    this.setState({ palettes: [...this.state.palettes, newPalette] });
   }
   render() {
     // console.log(generatePalette(seedPalletes[2]));
@@ -22,13 +31,19 @@ class App extends React.Component {
         {/* <Palette palette={generatePalette(seedPalletes[2])} /> */}
         <Switch>
           {/* Must be before /palette/:id so that this match first. Order is important */}
-          <Route exact path='/palette/new' render={() => <NewPaletteForm />} />
+          <Route
+            exact
+            path='/palette/new'
+            render={routeProps => (
+              <NewPaletteForm savePalette={this.savePalette} {...routeProps} />
+            )}
+          />
           {/* Palette List does not need generated color. Only the seed palettes is enough */}
           <Route
             exact
             path='/'
             render={routeProps => (
-              <PaletteList palettes={seedPalletes} {...routeProps} />
+              <PaletteList palettes={this.state.palettes} {...routeProps} />
             )}
           />
           <Route

@@ -1159,3 +1159,8 @@
     - required (default)
     - unique color (custom)
     - unique color name (custom)
+
+## 29 Color Project - Pt 6
+### 29.1 Saving New Palettes
+1. Send new palette info to App.js
+2. Push received palette data in App.js to seedPalettes
