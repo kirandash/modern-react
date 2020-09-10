@@ -1151,3 +1151,11 @@
 
 ### 28.9 Creating Draggable Color Box
 1. Color Boxes to show on NewPaletteForm after adding new color Palette. Later we will make it draggable.
+
+### 28.10 Form Validator using react-material-ui-form-validator
+1. https://github.com/NewOldMax/react-material-ui-form-validator#readme
+2. `npm install react-material-ui-form-validator`
+3. Add 3 validations
+    - required (default)
+    - unique color (custom)
+    - unique color name (custom)
