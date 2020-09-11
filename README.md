@@ -1182,3 +1182,6 @@
 1. Clear all colors from palette
 2. Generate Random colors
 3. Disable random colors btn if total colors in palette reaches 20
+
+### 29.7 Extract New Palette Nav
+1. Move Navigation bar: AppBar to a new component from NewPaletteForm to PaletteFormNav.
