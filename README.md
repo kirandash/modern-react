@@ -1166,3 +1166,5 @@
 2. Push received palette data in App.js to seedPalettes
 
 ### 29.2 Add Palette Name Form
+
+### 29.3 Styling Draggable Color Box
