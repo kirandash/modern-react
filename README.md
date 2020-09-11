@@ -1185,3 +1185,6 @@
 
 ### 29.7 Extract New Palette Nav
 1. Move Navigation bar: AppBar to a new component from NewPaletteForm to PaletteFormNav.
+
+### 29.8 Extract Color Picker Component
+1. Refactor to move color picker related code to own file ColorPickerForm.js from NewPaletteForm.js
