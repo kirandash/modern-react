@@ -1190,3 +1190,5 @@
 1. Refactor to move color picker related code to own file ColorPickerForm.js from NewPaletteForm.js
 
 ### 29.9 Styling Palette Form Nav
+
+### 29.10 Styling Color Picker Form
