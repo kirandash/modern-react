@@ -1177,3 +1177,8 @@
     - react beautiful dnd: https://github.com/atlassian/react-beautiful-dnd : only vertical drag and drop
     - react sortable hoc: https://github.com/clauderic/react-sortable-hoc : less popular but both vertical & horizontal dnd
 2. `npm install react-sortable-hoc --save`
+
+### 29.6 Clear Palette and Random Color Buttons
+1. Clear all colors from palette
+2. Generate Random colors
+3. Disable random colors btn if total colors in palette reaches 20
