@@ -1196,3 +1196,5 @@
 ## 30 Color Project - Pt 7
 ### 30.1 Adding Modal Dialog
 1. Move Save Palette form into Dialog - Palette Meta Form
+
+### 30.2 Styling Dialog
