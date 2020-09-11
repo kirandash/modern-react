@@ -1170,3 +1170,10 @@
 ### 29.3 Styling Draggable Color Box
 
 ### 29.4 Adding Color Box Delete
+
+### 29.5 Implement Drag and Drop Feature
+1. Options:
+    - react dnd: https://github.com/react-dnd/react-dnd : not much support
+    - react beautiful dnd: https://github.com/atlassian/react-beautiful-dnd : only vertical drag and drop
+    - react sortable hoc: https://github.com/clauderic/react-sortable-hoc : less popular but both vertical & horizontal dnd
+2. `npm install react-sortable-hoc --save`
