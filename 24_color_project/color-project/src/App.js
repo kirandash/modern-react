@@ -35,7 +35,11 @@ class App extends React.Component {
             exact
             path='/palette/new'
             render={routeProps => (
-              <NewPaletteForm savePalette={this.savePalette} {...routeProps} />
+              <NewPaletteForm
+                savePalette={this.savePalette}
+                palettes={this.state.palettes}
+                {...routeProps}
+              />
             )}
           />
           {/* Palette List does not need generated color. Only the seed palettes is enough */}

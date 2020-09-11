@@ -1164,3 +1164,5 @@
 ### 29.1 Saving New Palettes
 1. Send new palette info to App.js
 2. Push received palette data in App.js to seedPalettes
+
+### 29.2 Add Palette Name Form
