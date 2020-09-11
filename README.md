@@ -1192,3 +1192,7 @@
 ### 29.9 Styling Palette Form Nav
 
 ### 29.10 Styling Color Picker Form
+
+## 30 Color Project - Pt 7
+### 30.1 Adding Modal Dialog
+1. Move Save Palette form into Dialog - Palette Meta Form
