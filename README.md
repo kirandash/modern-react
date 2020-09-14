@@ -1198,3 +1198,7 @@
 1. Move Save Palette form into Dialog - Palette Meta Form
 
 ### 30.2 Styling Dialog
+
+### 30.3 Closing Form dialog and adding Emoji
+1. https://github.com/missive/emoji-mart
+2. `npm install --save emoji-mart`
