@@ -1202,3 +1202,6 @@
 ### 30.3 Closing Form dialog and adding Emoji
 1. https://github.com/missive/emoji-mart
 2. `npm install --save emoji-mart`
+
+### 30.4 Finish Emoji Picker Form
+1. On saving title, in next pop up show emoji form. On selecting emoji, hide the popup, save data and redirect to landing page.
