@@ -1205,3 +1205,5 @@
 
 ### 30.4 Finish Emoji Picker Form
 1. On saving title, in next pop up show emoji form. On selecting emoji, hide the popup, save data and redirect to landing page.
+
+### 30.5 Moving JSS styles out
