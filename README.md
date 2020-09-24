@@ -1211,3 +1211,6 @@
 ### 30.6 Tweak Form Styles
 
 ### 30.7 Saving to LocalStorage
+
+### 30.8 Adding Mini Palette Delete Button/icon
+1. Overriding styles from material ui components: https://material-ui.com/customization/components/#overriding-with-inline-styles
