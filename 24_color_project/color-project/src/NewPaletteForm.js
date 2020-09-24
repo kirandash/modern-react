@@ -94,7 +94,6 @@ class NewPaletteForm extends Component {
         const paletteIsFull = colors.length >= maxColors;
         return (
             <div className={classes.root}>
-                <h1>New Palette Form!</h1>
                 <PaletteFormNav
                     open={open}
                     palettes={palettes}

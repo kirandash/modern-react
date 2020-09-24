@@ -1207,3 +1207,5 @@
 1. On saving title, in next pop up show emoji form. On selecting emoji, hide the popup, save data and redirect to landing page.
 
 ### 30.5 Moving JSS styles out
+
+### 30.6 Tweak Form Styles
