@@ -1216,3 +1216,6 @@
 1. Overriding styles from material ui components: https://material-ui.com/customization/components/#overriding-with-inline-styles
 
 ### 30.9 Finishing Mini Palette Delete implementation
+
+### 30.10 Create Responsive sizes helper and style ColorBox
+1. Bootstrap breakpoints: https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
