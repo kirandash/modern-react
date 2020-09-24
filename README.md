@@ -1214,3 +1214,5 @@
 
 ### 30.8 Adding Mini Palette Delete Button/icon
 1. Overriding styles from material ui components: https://material-ui.com/customization/components/#overriding-with-inline-styles
+
+### 30.9 Finishing Mini Palette Delete implementation
