@@ -11,7 +11,8 @@ import SingleColorPalette from "./SingleColorPalette";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { palettes: seedPalletes };
+    const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
+    this.state = { palettes: savedPalettes || seedPalletes };
     this.savePalette = this.savePalette.bind(this);
     this.findPalette = this.findPalette.bind(this);
   }
@@ -21,8 +22,19 @@ class App extends React.Component {
     });
   }
   savePalette(newPalette) {
-    this.setState({ palettes: [...this.state.palettes, newPalette] });
+    this.setState(
+      { palettes: [...this.state.palettes, newPalette] },
+      this.syncLocalStorage
+    );
   }
+  syncLocalStorage() {
+    //save palettes to local storage
+    window.localStorage.setItem(
+      "palettes",
+      JSON.stringify(this.state.palettes)
+    );
+  }
+
   render() {
     // console.log(generatePalette(seedPalletes[2]));
     return (
