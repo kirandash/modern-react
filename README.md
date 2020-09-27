@@ -1226,3 +1226,8 @@
 ### 30.12 Make Form and Navbar Responsive
 
 ### 30.13 Make Palette List responsive
+
+### 30.14 Add bg svg to PaletteList
+1. svgbackgrounds.com
+2. https://www.svgbackgrounds.com/#confetti-doodles
+3. Can customize colors, scale and opacity
