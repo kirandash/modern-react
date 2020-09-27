@@ -1231,3 +1231,8 @@
 1. svgbackgrounds.com
 2. https://www.svgbackgrounds.com/#confetti-doodles
 3. Can customize colors, scale and opacity
+
+### 30.15 Animate palette deletion - fade animations with transition group
+1. To clear localStorage: `window.localStorage.clear()`
+2. React Transition group: https://reactcommunity.org/react-transition-group/transition-group
+3. `npm install react-transition-group --save`

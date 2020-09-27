@@ -2,6 +2,17 @@ import sizes from "./sizes";
 import bg from "./bg.svg";
 
 export default {
+    // @global annotation will make sure that the child class names are not prefixed 
+    // and thus can be accessed from anywhere - helpful in overwriting 3rd party class styles
+    "@global": {
+        ".fade-exit": {
+            opacity: 1
+        },
+        ".fade-exit-active": {
+            opacity: 0,
+            transition: "opacity 500ms ease-out"
+        }
+    },
     root: {
         backgroundColor: "blue",
         height: "100vh",
