@@ -1224,3 +1224,5 @@
 ### 30.11 Make ColorBox responsive
 
 ### 30.12 Make Form and Navbar Responsive
+
+### 30.13 Make Palette List responsive
