@@ -1225,14 +1225,18 @@
 
 ### 30.12 Make Form and Navbar Responsive
 
-### 30.13 Make Palette List responsive
+## 31 Color Project - Pt 8
+### 31.01 Make Palette List responsive
 
-### 30.14 Add bg svg to PaletteList
+### 31.02 Add bg svg to PaletteList
 1. svgbackgrounds.com
 2. https://www.svgbackgrounds.com/#confetti-doodles
 3. Can customize colors, scale and opacity
 
-### 30.15 Animate palette deletion - fade animations with transition group
+### 31.03 Animate palette deletion - fade animations with transition group
 1. To clear localStorage: `window.localStorage.clear()`
 2. React Transition group: https://reactcommunity.org/react-transition-group/transition-group
 3. `npm install react-transition-group --save`
+
+### 31.04 Delete Confirmation Dialog
+1. https://material-ui.com/components/dialogs/#simple-dialogs
