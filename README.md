@@ -1222,3 +1222,5 @@
 2. Create responsive sizes helper in src/styles/sizes.js and use viz `[sizes.down("lg")]: {...}`
 
 ### 30.11 Make ColorBox responsive
+
+### 30.12 Make Form and Navbar Responsive
