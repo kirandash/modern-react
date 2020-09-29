@@ -1248,3 +1248,7 @@
 
 ### 31.06 Animating Route Transitions
 1. Use TransitionGroup and CSSTransition from react-transition-group to wrap Routes in App.js
+
+### 31.07 Refactoring Route Transitions
+1. Create a Page component and render all content using `props.children`
+2. Current route animation is fade: with opacity. From right to left: use `transformX()` for `page-enter` and `page-exit` classNames.
