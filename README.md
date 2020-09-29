@@ -1280,4 +1280,14 @@
 2. Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
 3. https://reactjs.org/docs/hooks-intro.html#gradual-adoption-strategy
 4. Hooks are not very commonly used yet. But still better to know since hooks will be the future. 
-5. Hooks are easier to understand. Less code. No need to write class based component. And easier to reuse between components.
+5. Benefits of Hooks:
+    - Hooks are easier to understand. 
+    - Less code. 
+    - No need to write class based component. 
+    - And easier to reuse between components.
+6. useState provides:
+    - the piece of state
+    - function to update that piece of state
+    - initial value for piece of state
+    - Ex: `const [count, setCount] = useState(0)`
+7. hooks makes it easier to implement functionalities with few lines of code. Compare CouterClass and CounterHooks
