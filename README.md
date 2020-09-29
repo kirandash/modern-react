@@ -1273,3 +1273,11 @@
 ### 31.12 404 url and Preventing duplicate random colors
 1. Add new route to App.js for 404 url
 2. Prevent duplicate random colors in NewPaletteForm.js
+
+## 32 React Hooks
+### 32.1 Intro to Hooks and useState
+1. https://reactjs.org/docs/hooks-intro.html
+2. Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+3. https://reactjs.org/docs/hooks-intro.html#gradual-adoption-strategy
+4. Hooks are not very commonly used yet. But still better to know since hooks will be the future. 
+5. Hooks are easier to understand. Less code. No need to write class based component. And easier to reuse between components.
