@@ -1265,3 +1265,7 @@
     - always have copyOverlay and conditionally add showOverlay class if copied is true
 
 ### 31.10 Clean up files - Re organize
+
+### 31.11 Fix issues with NewPaletteForm
+1. Issue: If all palettes are deleted, on create palette pre population is failing. To fix this, use seedPaleettes instead of props. as prop items are getting deleted.
+2. For text on color box in create pallete screen: add dynamic color.
