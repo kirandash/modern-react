@@ -1263,3 +1263,5 @@
 1. classNames package as an alternate to using dynamic class names with back tick
 2. `className={classNames(classes.copyOverlay, {[classes.showOverlay]: copied})}`
     - always have copyOverlay and conditionally add showOverlay class if copied is true
+
+### 31.10 Clean up files - Re organize
