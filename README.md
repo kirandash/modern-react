@@ -1269,3 +1269,7 @@
 ### 31.11 Fix issues with NewPaletteForm
 1. Issue: If all palettes are deleted, on create palette pre population is failing. To fix this, use seedPaleettes instead of props. as prop items are getting deleted.
 2. For text on color box in create pallete screen: add dynamic color.
+
+### 31.12 404 url and Preventing duplicate random colors
+1. Add new route to App.js for 404 url
+2. Prevent duplicate random colors in NewPaletteForm.js
