@@ -1252,3 +1252,9 @@
 ### 31.07 Refactoring Route Transitions
 1. Create a Page component and render all content using `props.children`
 2. Current route animation is fade: with opacity. From right to left: use `transformX()` for `page-enter` and `page-exit` classNames.
+
+### 31.08 Optimizing with PureComponent
+1. In current implementation, on deleting a MiniPalette from PaletteList, all MiniPalettes in PaletteList component are re-rendered although only one item is deleted. We will fix this using `PureComponent`.
+2. React.PureComponent is similar to React.Component. The difference between them is that React.Component doesn’t implement shouldComponentUpdate(), but React.PureComponent implements it with a shallow prop and state comparison.
+3. If your React component’s render() function renders the same result given the same props and state, you can use React.PureComponent for a performance boost in some cases.
+4. Avoid arrow fn in render to avoid re-rendering
