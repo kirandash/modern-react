@@ -1245,3 +1245,6 @@
 1. Intermittent issue: the draggable color palette items can not be deleted some times. Because the click event on delete icon is being considered as drag event. "Click event is being swallowed"
     - https://github.com/clauderic/react-sortable-hoc#click-events-being-swallowed
     - `distance={20}` can be passed to DraggableColorList or the SortableContainer. which will make sure that a movement of more than 20 px is decided as drag.
+
+### 31.06 Animating Route Transitions
+1. Use TransitionGroup and CSSTransition from react-transition-group to wrap Routes in App.js
