@@ -1258,3 +1258,8 @@
 2. React.PureComponent is similar to React.Component. The difference between them is that React.Component doesn’t implement shouldComponentUpdate(), but React.PureComponent implements it with a shallow prop and state comparison.
 3. If your React component’s render() function renders the same result given the same props and state, you can use React.PureComponent for a performance boost in some cases.
 4. Avoid arrow fn in render to avoid re-rendering
+
+### 31.09 Clean Up - Fix navbar slider size and add classnames to ColorBox
+1. classNames package as an alternate to using dynamic class names with back tick
+2. `className={classNames(classes.copyOverlay, {[classes.showOverlay]: copied})}`
+    - always have copyOverlay and conditionally add showOverlay class if copied is true
