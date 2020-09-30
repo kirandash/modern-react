@@ -1291,3 +1291,8 @@
     - initial value for piece of state
     - Ex: `const [count, setCount] = useState(0)`
 7. hooks makes it easier to implement functionalities with few lines of code. Compare CouterClass and CounterHooks
+
+### 32.2 Building a Custom Hook useToggleState
+1. The real benefit of hooks is **CODE REUSABILITY**. We can share stateful logic b/w components.
+2. Since hooks can basically accessed through a fn and returned for use.
+3. Demo: - useToggle.js with useState for toggle fn
