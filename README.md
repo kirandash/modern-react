@@ -1291,6 +1291,7 @@
     - initial value for piece of state
     - Ex: `const [count, setCount] = useState(0)`
 7. hooks makes it easier to implement functionalities with few lines of code. Compare CouterClass and CounterHooks
+8. Note: useState doesn't have callback fn like setState.
 
 ### 32.2 Building a Custom Hook useToggleState
 1. The real benefit of hooks is **CODE REUSABILITY**. We can share stateful logic b/w components.
@@ -1299,3 +1300,10 @@
 
 ### 32.3 Building a Custom Hook useInputState
 1. Building a logic to make reusable form input containing state using useState
+
+### 32.4 useEffect Hook
+1. https://reactjs.org/docs/hooks-effect.html
+2. Class based components have lifecycle methods. But we don't have access to all these methods in functional components.
+3. useEffect: Similar to componentDidMount and componentDidUpdate
+    - By default, it runs both after the first render and after every update.
+4. Note: useState doesn't have callback fn like setState. So, to do something after state is changed, can use `useEffect`

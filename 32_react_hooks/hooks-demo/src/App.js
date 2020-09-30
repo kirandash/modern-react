@@ -8,6 +8,7 @@ import Toggler from './Toggler';
 import SimpleFormClass from './SimpleFormClass';
 import SimpleFormHooks from './SimpleFormHooks';
 import SimpleFormInputHooks from './SimpleFormInputHooks'
+import Clicker from './Clicker';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <SimpleFormHooks />
       <h1>Form input with reusable hooks</h1>
       <SimpleFormInputHooks />
+      <h1>32.4 useEffect Hook</h1>
+      <Clicker />
     </div>
   );
 }
