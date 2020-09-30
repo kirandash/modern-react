@@ -9,6 +9,7 @@ import SimpleFormClass from './SimpleFormClass';
 import SimpleFormHooks from './SimpleFormHooks';
 import SimpleFormInputHooks from './SimpleFormInputHooks'
 import Clicker from './Clicker';
+import SWMovies from './SWMovies';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
       <SimpleFormInputHooks />
       <h1>32.4 useEffect Hook</h1>
       <Clicker />
+      <h1>32.5 Fetching data w the useEffect hook</h1>
+      <SWMovies />
+      <br/>
+      <br/>
+      <br/>
     </div>
   );
 }

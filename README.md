@@ -1307,3 +1307,8 @@
 3. useEffect: Similar to componentDidMount and componentDidUpdate
     - By default, it runs both after the first render and after every update.
 4. Note: useState doesn't have callback fn like setState. So, to do something after state is changed, can use `useEffect`
+
+### 32.5 Fetching data w the useEffect hook and controlling useEffect execution
+1. api: https://swapi.dev/
+2. `npm install axios`
+3. Note: useEffect will run when anything changes in the state or prop. To fix this we can pass an additional argument mentioning what exactly should trigger useEffect. Ex: `useEffect(() => {}, [])`
