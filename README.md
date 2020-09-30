@@ -1296,3 +1296,6 @@
 1. The real benefit of hooks is **CODE REUSABILITY**. We can share stateful logic b/w components.
 2. Since hooks can basically accessed through a fn and returned for use.
 3. Demo: - useToggle.js with useState for toggle fn
+
+### 32.3 Building a Custom Hook useInputState
+1. Building a logic to make reusable form input containing state using useState
