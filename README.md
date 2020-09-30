@@ -1318,3 +1318,6 @@
 1. Install material ui: `npm install @material-ui/core`
 
 ### 33.2 Adding Form with Hooks
+
+### 33.3 Adding Todo Item Component
+1. Install material ui icons: `npm install @material-ui/icons`
