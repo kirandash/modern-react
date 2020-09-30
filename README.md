@@ -1312,3 +1312,7 @@
 1. api: https://swapi.dev/
 2. `npm install axios`
 3. Note: useEffect will run when anything changes in the state or prop. To fix this we can pass an additional argument mentioning what exactly should trigger useEffect. Ex: `useEffect(() => {}, [])`
+
+## 33 Hooks Project
+### 33.1 Intro
+1. Install material ui: `npm install @material-ui/core`
