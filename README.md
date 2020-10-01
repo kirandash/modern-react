@@ -1334,3 +1334,15 @@
 ### 33.7 LocalStorage w useEffect Hook
 
 ### 33.8 Refactoring to a Custom Hook
+
+## 34 Introducing the Context API
+### 34.1 Intro
+1. https://reactjs.org/docs/context.html
+2. Topics: 
+    - hooks
+    - context
+    - context w hooks
+    - context w hooks w reducers (redux killer - alternate to state management w redux)
+3. Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+4. Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. 
+5. Context is primarily used when some data needs to be accessible by many components at different nesting levels. Apply it sparingly because it makes component reuse more difficult.
