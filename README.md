@@ -1321,3 +1321,8 @@
 
 ### 33.3 Adding Todo Item Component
 1. Install material ui icons: `npm install @material-ui/icons`
+
+### 33.4 Toggling and Deletion with Hooks
+1. For keys: better to use uuid
+2. `npm install uuid`
+3. https://www.npmjs.com/package/uuid

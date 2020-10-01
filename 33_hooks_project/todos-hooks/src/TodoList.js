@@ -4,16 +4,19 @@ import Paper from "@material-ui/core/Paper";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 
-function TodoList(props) {
+function TodoList({ todos, removeTodo, toggleTodo }) {
     return (
         <Paper>
             <List>
-                {props.todos.map((todo, i) => (
+                {todos.map((todo, i) => (
                     <React.Fragment key={i}>
                         <Todo
                             task={todo.task}
                             key={todo.id}
+                            {...todo}
                             completed={todo.completed}
+                            removeTodo={removeTodo}
+                            toggleTodo={toggleTodo}
                         />
                         <Divider />
                     </React.Fragment>
