@@ -1328,3 +1328,5 @@
 3. https://www.npmjs.com/package/uuid
 
 ### 33.5 Editing w Hooks
+
+### 33.6 Small Style Tweaks
