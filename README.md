@@ -1330,3 +1330,5 @@
 ### 33.5 Editing w Hooks
 
 ### 33.6 Small Style Tweaks
+
+### 33.7 LocalStorage w useEffect Hook
