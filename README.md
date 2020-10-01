@@ -1326,3 +1326,5 @@
 1. For keys: better to use uuid
 2. `npm install uuid`
 3. https://www.npmjs.com/package/uuid
+
+### 33.5 Editing w Hooks
