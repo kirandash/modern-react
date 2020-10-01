@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { v4 as uuidv4 } from 'uuid';
+import React, { useEffect } from 'react'
+import useTodoState from './hooks/useTodoState'
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import AppBar from "@material-ui/core/AppBar";
@@ -15,31 +15,13 @@ export default function TodoApp() {
     //     { id: 2, task: "Wash car", completed: true },
     //     { id: 3, task: "Grow Beard", completed: false }
     // ];
-    const [todos, setTodos] = useState(initialTodos);
+    const {todos, addTodo, removeTodo, toggleTodo, editTodo} = useTodoState(initialTodos);
 
     useEffect(()=> {
         // alert("IN USE EFFECT!");
         // will be called on render on every update
         window.localStorage.setItem("todos", JSON.stringify(todos))
     }, [todos]); // will be called only when todos is changed in state. and not other props or state
-
-    const addTodo = newTodoText => {
-        setTodos([...todos, { id: uuidv4(), task: newTodoText, completed: false }])
-    }
-    const removeTodo = todoId => {
-        // filter out removed todo
-        const updatedTodos = todos.filter(todo => todo.id !== todoId);
-        // call setTodos with new todos array
-        setTodos(updatedTodos)
-    }
-    const toggleTodo = todoId => {
-        const updatedTodos = todos.map(todo => todo.id === todoId ? {...todo, completed: !todo.completed} : todo)
-        setTodos(updatedTodos)
-    }
-    const editTodo = (todoId, newTask) => {
-        const updatedTodos = todos.map(todo => todo.id === todoId ? {...todo, task: newTask} : todo)
-        setTodos(updatedTodos)
-    }
 
     return (
         <Paper

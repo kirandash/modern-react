@@ -1332,3 +1332,5 @@
 ### 33.6 Small Style Tweaks
 
 ### 33.7 LocalStorage w useEffect Hook
+
+### 33.8 Refactoring to a Custom Hook
