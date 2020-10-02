@@ -26,6 +26,7 @@ const content = {
   }
 };
 function Navbar(props) {
+  // Easy to use multiple contexts in a component. Unlike class based component with hoc
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   const { classes } = props;

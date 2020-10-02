@@ -1378,3 +1378,14 @@
 ## 35 Using Context with Hooks
 ### 35.1 Introducing the useContext hook
 1. https://reactjs.org/docs/hooks-reference.html#usecontext
+    - `const value = useContext(MyContext);`
+    - Benefit: Easy to use two contexts in a component. Unlike class based component
+
+### 35.2 Consuming Multiple Contexts w Hooks
+1. Easy to use two contexts in a component. Unlike class based component
+
+### 35.3 Rewriting a Context provider with hooks
+1. Can write context provider with fn component and hooks. Lesser code compared to class based components.
+
+### 35.4 Context Providers w Custom Hooks
+1. useToggleState used with ThemeContext

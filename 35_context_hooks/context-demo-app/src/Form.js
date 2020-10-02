@@ -35,6 +35,7 @@ const words = {
   }
 };
 function Form(props) {
+  // useContext hook - alternate to this.context from class based component
   const { language, changeLanguage } = useContext(LanguageContext);
   const { classes } = props;
   const { email, signIn, password, remember } = words[language];
