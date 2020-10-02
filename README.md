@@ -1369,3 +1369,8 @@
 
 ### 34.7 Writing the Language context
 1. One component can't use two context at one time. To do that we need to use a hoc
+
+### 34.8 Consuming 2 Contexts enter the higher order component
+1. https://reactjs.org/docs/context.html#contextconsumer
+2. Use context consumer
+3. One context can now be used with this.context and the other context can be accessed by passing as a prop with hoc.

@@ -20,3 +20,10 @@ export class LanguageProvider extends Component {
         )
     }
 }
+
+// Higher order component to make sure component can be directly passed on so we don't have to create markup in Navbar
+export const withLanguageContext = Component => props => (
+    <LanguageContext.Consumer>
+        {value => <Component languageContext={value} {...props} />}
+    </LanguageContext.Consumer>
+); // Input: Component, props. Returns new component with original props and language context
