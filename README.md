@@ -1389,3 +1389,6 @@
 
 ### 35.4 Context Providers w Custom Hooks
 1. useToggleState used with ThemeContext
+
+## 36 State management w useReducer & useContext
+### 36.1 Adding in Todos context
