@@ -1374,3 +1374,7 @@
 1. https://reactjs.org/docs/context.html#contextconsumer
 2. Use context consumer
 3. One context can now be used with this.context and the other context can be accessed by passing as a prop with hoc.
+
+## 35 Using Context with Hooks
+### 35.1 Introducing the useContext hook
+1. https://reactjs.org/docs/hooks-reference.html#usecontext
