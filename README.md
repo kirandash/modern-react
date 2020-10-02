@@ -1364,3 +1364,5 @@
     - `static contextType = ThemeContext; `
     - access value using `this.context`
 4. Limitation: Using more than one context is not possible with this approach
+
+### 34.6 Updating a context dynamically
