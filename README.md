@@ -1357,3 +1357,10 @@
 3. Every context comes with a provider.
 4. Wrap components for which we need to share data using context.Provider
 5. Data must be passed to components using `value` attribute
+
+### 34.5 Consuming Context
+1. https://reactjs.org/docs/context.html#classcontexttype
+2. Consume data passed by context and provider using context
+    - `static contextType = ThemeContext; `
+    - access value using `this.context`
+4. Limitation: Using more than one context is not possible with this approach
