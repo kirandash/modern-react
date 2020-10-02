@@ -1346,3 +1346,14 @@
 3. Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 4. Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. 
 5. Context is primarily used when some data needs to be accessible by many components at different nesting levels. Apply it sparingly because it makes component reuse more difficult.
+
+### 34.2 Adding a Responsive Navbar to our Context App
+
+### 34.3 Adding a Responsive Form to our Context App
+
+### 34.4 Intro to Context and Providers
+1. https://reactjs.org/docs/context.html#reactcreatecontext
+2. https://reactjs.org/docs/context.html#contextprovider
+3. Every context comes with a provider.
+4. Wrap components for which we need to share data using context.Provider
+5. Data must be passed to components using `value` attribute
