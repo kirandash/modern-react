@@ -1366,3 +1366,6 @@
 4. Limitation: Using more than one context is not possible with this approach
 
 ### 34.6 Updating a context dynamically
+
+### 34.7 Writing the Language context
+1. One component can't use two context at one time. To do that we need to use a hoc
