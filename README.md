@@ -1391,4 +1391,8 @@
 1. useToggleState used with ThemeContext
 
 ## 36 State management w useReducer & useContext
+
 ### 36.1 Adding in Todos context
+
+### 36.2 Consuming the Todo Context
+1. Instead of passing methods or data via props, use Context.
