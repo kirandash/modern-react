@@ -1396,3 +1396,30 @@
 
 ### 36.2 Consuming the Todo Context
 1. Instead of passing methods or data via props, use Context.
+
+### 36.3 Issues with our current approach
+1. Architecture of useTodoState hook
+    - instead of separate hooks for add, remove, edit etc, we will create one hook for all and then pass edit or add as args.
+    - mimics redux for managing state. One reducer for all types of actions.
+2. Performance Issue fix - Fixing unnecessary rerendering
+    - To do form is being re-rendered bcoz: context is changing.
+    - **IMPORTANT**: every time context changes: component will be rendered!
+    - **Solution**: Separate contexts for each functionality. Like reducer concept.
+    - To test in devtools ---> Components ---> Settings ---> **Highlight updates** when components rerender ---> Will show all the re-rendered components.
+
+### 36.4 What is a Reducer?
+1. https://reactjs.org/docs/hooks-reference.html#usereducer
+2. useReducer:
+    - An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
+3. Reducer in general (JS)
+    - (accumulatedValue, nextItem) => nextAccumulatedValue
+    - takes two values and reduces them down to one value
+4. Reducer in our case (react)
+    - The two values provided to reducer are:
+        - the current state
+        - an action that update the state
+    - (state, action) => newState
+    - Ex: Formats:
+        - {type: 'ADD_TODO', task: 'walk the cat'}
+
+### 36.5 First Reducer - Example
