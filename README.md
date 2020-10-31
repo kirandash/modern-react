@@ -1422,4 +1422,5 @@
     - Ex: Formats:
         - {type: 'ADD_TODO', task: 'walk the cat'}
 
-### 36.5 First Reducer - Example
+### 36.5 First Reducer - Example with useReducer
+1. useReducer as alternate approach to Redux
