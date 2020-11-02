@@ -1430,3 +1430,11 @@
     - take care of add, edit, remove, toggle fns from useTodoState.js
 2. Replace hooks in todos.context.js with reducer
 3. Circumvent localStorage part to store initial data
+
+### 36.7 Splitting into 2 contexts
+1. Improve performance by preventing unnecessary re-renders bcoz of single context
+2. todos.context.js
+    - create separate contexts for todos, dispatch.
+3. In components: use TodosContext or DispatchContext accordingly where needed.
+4. **Note**: passing value in context as: `value={{ todos }}` will create new instance of todos every time as we are passing it as object. And still it will re-render. To avoid this: do not pass the value as object. : `value={todos}`
+    - and then use todos and dispatch values directly.

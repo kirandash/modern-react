@@ -8,14 +8,19 @@ const defaultTodos = [
     { id: 1, task: 'Mow lawn', completed: false },
     { id: 2, task: 'Release lady bugs', completed: true }
 ]
+
+// Separate contexts for Todos and dispatch to avoid re-renders - performance optimization
 export const TodosContext = createContext();
+export const DispatchContext = createContext();
 
 export function TodosProvider(props) {
     const [todos, dispatch] = useReducer(todoReducer, defaultTodos);
     // const todosStuff = useTodoState(defaultTodos)
     return (
-        <TodosContext.Provider value={{todos, dispatch}}>
-            {props.children}
+        <TodosContext.Provider value={todos}>
+            <DispatchContext.Provider value={dispatch}>
+                {props.children}
+            </DispatchContext.Provider>
         </TodosContext.Provider>
     )
 }
