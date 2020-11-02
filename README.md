@@ -1424,3 +1424,9 @@
 
 ### 36.5 First Reducer - Example with useReducer
 1. useReducer as alternate approach to Redux
+
+### 36.6 Creating Todo reducer
+1. src/reducers/todo.reducer.js
+    - take care of add, edit, remove, toggle fns from useTodoState.js
+2. Replace hooks in todos.context.js with reducer
+3. Circumvent localStorage part to store initial data
