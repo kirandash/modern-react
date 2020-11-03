@@ -1454,3 +1454,17 @@
 1. use local storage to store todo data
     * currently we have useLocalStorageState which uses useState and is redundant now.
     * We will create useLocalStorageReducer.js which will use useReducer.
+
+## 37 Custom Create React App Tool
+### 37.1 What is webpack
+1. A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.
+2. The 2 main things that webpack does are:
+    * bundles our code/assets together
+    * manages dependencies
+3. In dev mode: `npm start`
+    * Bundles all css and js into one file. Ex: main.chunk.js file
+    * imports are replaced with `__webpack_require()__`
+4. In prod mode: `npm run build`
+    * creates .js and .css files.
+
+### 37.2 Installing and Running Webpack
