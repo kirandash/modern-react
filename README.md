@@ -1449,3 +1449,8 @@
         * React.memo is a higher order component that we can wrap around our entire fn component.
         * Add memo as higher order fn around Todo fn in Todo.js. Then it will re-render only if there is a change in prop otherwise not.
         * It uses a concept called **memoization**. In computing, memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+
+### 36.9 Custom Hook Reducer + LocalStorage
+1. use local storage to store todo data
+    * currently we have useLocalStorageState which uses useState and is redundant now.
+    * We will create useLocalStorageReducer.js which will use useReducer.
