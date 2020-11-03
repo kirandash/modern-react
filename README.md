@@ -1438,3 +1438,14 @@
 3. In components: use TodosContext or DispatchContext accordingly where needed.
 4. **Note**: passing value in context as: `value={{ todos }}` will create new instance of todos every time as we are passing it as object. And still it will re-render. To avoid this: do not pass the value as object. : `value={todos}`
     - and then use todos and dispatch values directly.
+
+### 36.8 Optimizing w Memo - Prevent re-render
+1. Currently if a new todo is added all todos are being re-rendered in Todo.js. Bcoz: todos list changes whenever there is a new item added. And all Todos are rendered bcoz of map fn.
+2. To fix this: 
+    * For class based components: we can use **PureComponent**. Or the **shouldComponentUpdate** lifecycle hook.
+        * Make Todo.js a PureComponent. Then it will re-render only if there is a change in prop otherwise not.
+    * For fn based components: use **memo**
+        * https://reactjs.org/docs/react-api.html#reactmemo
+        * React.memo is a higher order component that we can wrap around our entire fn component.
+        * Add memo as higher order fn around Todo fn in Todo.js. Then it will re-render only if there is a change in prop otherwise not.
+        * It uses a concept called **memoization**. In computing, memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
