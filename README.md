@@ -1481,3 +1481,12 @@
 1. Currently index.js is only bundling code in it. We will import files in index.js. To manage dependencies.
 2. index.js ---> entry point
     * imports are used for dependency injection.
+
+### 37.4 Configuring Webpack
+1. By default: 
+    * the entry point for webpack is: index.js in src.
+    * The compiled files are in dist/main.js
+2. Override default settings by creating webpack.config.js file
+3. `imports` are replaced w `__webpack__require` to add dependency modules
+4. Configs:
+    * mode, devtool, entry, output
