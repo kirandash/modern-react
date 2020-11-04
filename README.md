@@ -1468,3 +1468,5 @@
     * creates .js and .css files.
 
 ### 37.2 Installing and Running Webpack
+1. Break code into separate modules.
+    * app.js
