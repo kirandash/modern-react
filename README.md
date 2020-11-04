@@ -1476,3 +1476,8 @@
 4. Configure scripts in package.json
 5. Create index.js for webpack in src folder so that webpack can resolve .src directory.
 6. Run `npm start` to run `webpack` command. It will create the dist folder with compiled files. Will copy code from index.js into dist/main.js file.
+
+### 37.3 Imports, Exports and webpack
+1. Currently index.js is only bundling code in it. We will import files in index.js. To manage dependencies.
+2. index.js ---> entry point
+    * imports are used for dependency injection.
