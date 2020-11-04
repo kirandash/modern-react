@@ -1468,5 +1468,11 @@
     * creates .js and .css files.
 
 ### 37.2 Installing and Running Webpack
-1. Break code into separate modules.
+1. Break code into separate files.
     * app.js
+    * Now we will have to manually include separate files into index.html since we are not using webpack.
+2. Create package.json: `npm init -y`: -y to avoid all qns and follow default config
+3. Install webpack: `npm install --save-dev webpack webpack-cli`
+4. Configure scripts in package.json
+5. Create index.js for webpack in src folder so that webpack can resolve .src directory.
+6. Run `npm start` to run `webpack` command. It will create the dist folder with compiled files. Will copy code from index.js into dist/main.js file.
