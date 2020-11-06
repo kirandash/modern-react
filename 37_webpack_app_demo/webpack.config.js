@@ -9,5 +9,14 @@ module.exports = {
         // filename: "hello.js",
         path: path.resolve(__dirname, "dist")
         // path: path.resolve(__dirname, "CODEEEE"), // resolve path to code directory
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'], // Note: Order is executed in reverse. 
+                // css-loader should execute first and then style-loader
+            },
+        ],
+    },
 }

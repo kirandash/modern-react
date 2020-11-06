@@ -1490,3 +1490,20 @@
 3. `imports` are replaced w `__webpack__require` to add dependency modules
 4. Configs:
     * mode, devtool, entry, output
+
+### 37.5 Webpack Loaders, CSS, & SASS
+1. So far we have only bundled JS code and files using webpack.
+2. Now we will see how to bundle other file types such as: images, css etc.
+3. Loaders:
+    * Concept: https://webpack.js.org/concepts/loaders/
+    * Loaders are transformations that are applied to the source code of a module. They allow you to pre-process files as you import or “load” them. Thus, loaders are kind of like “tasks” in other build tools and provide a powerful way to handle front-end build steps. Loaders can transform files from a different language (like TypeScript) to JavaScript or load inline images as data URLs. Loaders even allow you to do things like import CSS files directly from your JavaScript modules!
+    * Types of loaders: https://webpack.js.org/loaders/
+4. Managing CSS with **css-loader and style-loader**:
+    * https://webpack.js.org/loaders/css-loader/
+    * `npm install --save-dev style-loader css-loader`
+    * Add module rules to webpack.config.js
+    * `css-loader` takes our css code and converts it into JS. But won't add it to DOM.
+        - Defn: css-loader Loads CSS file with resolved imports and returns CSS code
+    * `style-loader` will take that JS and inject it into DOM.
+        - Defn: Add exports of a module as style to DOM
+5. bootstrap: `npm install --save-dev bootstrap`
