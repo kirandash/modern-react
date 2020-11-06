@@ -1507,3 +1507,9 @@
     * `style-loader` will take that JS and inject it into DOM.
         - Defn: Add exports of a module as style to DOM
 5. bootstrap: `npm install --save-dev bootstrap`
+6. sass loader:
+    * sass-loader Loads and compiles a SASS/SCSS fil
+    * https://webpack.js.org/loaders/sass-loader/
+    * `npm install sass-loader sass webpack --save-dev`
+    * Update webpack.config
+7. Note: Final bundle doesn't have any .css file. It has only index.html and one bundled .js file
