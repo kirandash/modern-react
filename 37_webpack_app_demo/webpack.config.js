@@ -1,15 +1,19 @@
 const path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: "development", // by default it is in prod mode - compressed files
     // devtool: "none", // to avoid use of eval for better readability
     entry: "./src/index.js",
     output: {
-        filename: "main.js",
+        filename: "main.[contenthash].js", // Cache Busting with hash generated based on content
         // filename: "hello.js",
         path: path.resolve(__dirname, "dist")
         // path: path.resolve(__dirname, "CODEEEE"), // resolve path to code directory
     },
+    plugins: [new HtmlWebpackPlugin({
+        template: "./src/template.html"
+    })],
     module: {
         rules: [
             {

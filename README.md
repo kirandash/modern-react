@@ -1513,3 +1513,16 @@
     * `npm install sass-loader sass webpack --save-dev`
     * Update webpack.config
 7. Note: Final bundle doesn't have any .css file. It has only index.html and one bundled .js file
+
+### 37.6 Cache Busting and Plugins
+1. **Cache Busting**: Browser remembers file name by default. Can check under Network ---> Size (If file is being loaded from memory or not)
+    * Problematic: If our bundled file name is always named main.js - the user's browser will think it's the same file even after re-deploying and use the cached file instead.
+    * We can control if file shouldn't be cached. By adding random name for output file name. So every time there is a new deployment: the file name is new.
+    * use **contenthash**: hash generated from content in bundled file.
+    * Now, if code is unchanged: output file name in dist folder is still the same. But if content changes then the hash and the bundled output will change.
+2. Now challenge is to add this randomly generate file into index.html. For that we will use **Plugins**
+    * Plugins gives additional functionalities to webpack.
+3. **HtmlWebpackPlugin**
+    * The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation. You can either let the plugin generate an HTML file for you, supply your own template using lodash templates, or use your own loader.
+    * `npm install --save-dev html-webpack-plugin`
+    * This plugin doesn't use any template by default. So, our bundled files will be added without any content. To add content: we must use a template. and add the bundled files with template content.
