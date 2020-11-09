@@ -1563,3 +1563,11 @@
     * This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.
     * https://webpack.js.org/plugins/mini-css-extract-plugin/
 3. We will use style-loader for dev and MiniCssExtractPlugin for prod. Since in dev: it will take more time to process otherwise.
+
+### 37.11 Minify CSS with optimize-css-assets-webpack-plugin
+1. https://github.com/NMFR/optimize-css-assets-webpack-plugin
+2. `npm install --save-dev optimize-css-assets-webpack-plugin`
+3. Only need to be done on prod
+4. Note: Adding this will override the default JS minifier (TerserPlugin). Thus, need to manually add TerserPlugin again.
+5. Note: Maybe CSS minification is optional. Latest webpack minifies both css and js as well. check in your project.
+6. Can minify and remove items viz: comments, attribute quotes, white spaces.

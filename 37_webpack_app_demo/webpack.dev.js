@@ -1,6 +1,7 @@
 const path = require("path");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
     mode: "development", // by default it is in prod mode - compressed files
@@ -11,6 +12,12 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist")
         // path: path.resolve(__dirname, "CODEEEE"), // resolve path to code directory
     },
+    plugins: [new HtmlWebpackPlugin({
+        template: "./src/template.html",
+        minify: {
+            removeComments: true
+        }
+    })],
     module: {
         rules: [
             {

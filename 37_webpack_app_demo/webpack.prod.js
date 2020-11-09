@@ -3,6 +3,9 @@ const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
     mode: "production", // by default it is in prod mode - compressed files
@@ -12,6 +15,20 @@ module.exports = merge(common, {
         // filename: "hello.js",
         path: path.resolve(__dirname, "dist")
         // path: path.resolve(__dirname, "CODEEEE"), // resolve path to code directory
+    },
+    optimization: {
+        minimizer: [
+            new OptimizeCssAssetsPlugin(),
+            new TerserPlugin(),
+            new HtmlWebpackPlugin({
+                template: "./src/template.html",
+                minify: {
+                    removeAttributeQuotes: true, // remove quotes for attributes viz class, id etc when there is less than one value
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            })
+        ]
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
