@@ -1526,3 +1526,14 @@
     * The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation. You can either let the plugin generate an HTML file for you, supply your own template using lodash templates, or use your own loader.
     * `npm install --save-dev html-webpack-plugin`
     * This plugin doesn't use any template by default. So, our bundled files will be added without any content. To add content: we must use a template. and add the bundled files with template content.
+
+### 37.7 Splitting Dev and Production
+1. Separate config files for: dev, prod and one for common settings.
+2. Equivalent to: `npm run start` and `npm run build` in create-react-app
+3. To merge different webpack config: use package: `webpack-merge`
+    * `npm install --save-dev webpack-merge`
+4. Add merge fn in dev and prod config files.
+5. Webpack dev server for dev mode: `npm install --save-dev webpack-dev-server`
+    * script: `"start": "webpack-dev-server --config webpack.dev.js --open",`
+    * --open makes sure to open the app on a browser.
+6. Note: webpack-dev-server keeps everything in memory and does not create a dist folder.
