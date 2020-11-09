@@ -1,6 +1,7 @@
 const path = require("path");
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
     mode: "production", // by default it is in prod mode - compressed files
@@ -11,4 +12,7 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist")
         // path: path.resolve(__dirname, "CODEEEE"), // resolve path to code directory
     },
+    plugins: [
+        new CleanWebpackPlugin()
+    ]
 });

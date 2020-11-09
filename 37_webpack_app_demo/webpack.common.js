@@ -18,6 +18,23 @@ module.exports = {
                 ], // Note: Order is executed in reverse. 
                 // css-loader should execute first and then style-loader
             },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
+            {
+                test: /\.(svg|png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                          name: '[name].[hash].[ext]',
+                          outputPath: 'imgs',
+                          publicPath: 'imgs',
+                        }
+                    },
+                ],
+            }
         ],
     },
 }

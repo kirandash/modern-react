@@ -1537,3 +1537,15 @@
     * script: `"start": "webpack-dev-server --config webpack.dev.js --open",`
     * --open makes sure to open the app on a browser.
 6. Note: webpack-dev-server keeps everything in memory and does not create a dist folder.
+
+### 37.8 HTML-Loader, file-loader and clean webpack plugin
+1. **html-loader**: `npm i --save-dev html-loader`
+    * Exports HTML as string. HTML is minimized when the compiler demands.
+    * https://webpack.js.org/loaders/html-loader/
+2. **file-loader**: `npm install file-loader --save-dev`
+    * The file-loader resolves import/require() on a file into a url and emits the file into the output directory.
+    * https://webpack.js.org/loaders/file-loader/
+3. **clean webpack plugin**: 
+    * Currently each build command creates a new bundle js file. Need to clean old files in prod
+    * `npm i --save clean-webpack-plugin`
+    * Add settings to webpack.prod file. Not needed in dev settings: since files on dev are created on fly.
