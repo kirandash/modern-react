@@ -1554,3 +1554,12 @@
 1. To separate bundle of different codes. viz separating our app code from vendor code like bootstrap etc.
 2. will create main.bundle.js and vendor.bundle.js based on the entry points in webpack.
 3. Test by adding bootstrap js separately in vendor.js
+4. Better since: vendor file are less likely to change and thus can be cached by browser. While main code can change and downloaded separately. 
+
+### 37.10 Extract CSS with MiniCssExtractPlugin
+1. Now: when app loads for a brief moment we can see the unstyled version. Bcoz currently css is injecting into DOM head and thus waiting for JS etc files to load. We fix this by extracing CSS first into a separate file and then make sure that CSS loads before any other file.
+2. **mini-css-extract-plugin**:
+    * `npm i --save-dev mini-css-extract-plugin`
+    * This plugin extracts CSS into separate files. It creates a CSS file per JS file which contains CSS. It supports On-Demand-Loading of CSS and SourceMaps.
+    * https://webpack.js.org/plugins/mini-css-extract-plugin/
+3. We will use style-loader for dev and MiniCssExtractPlugin for prod. Since in dev: it will take more time to process otherwise.

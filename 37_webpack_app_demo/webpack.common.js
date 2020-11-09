@@ -13,15 +13,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/i,
-                use: [
-                    'style-loader', // 3. Inject styles into DOM
-                    'css-loader', // 2. converts css into common js
-                    'sass-loader' // 1. Truns sass into css
-                ], // Note: Order is executed in reverse. 
-                // css-loader should execute first and then style-loader
-            },
-            {
                 test: /\.html$/i,
                 loader: 'html-loader',
             },
