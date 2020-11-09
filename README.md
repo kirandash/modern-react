@@ -1549,3 +1549,8 @@
     * Currently each build command creates a new bundle js file. Need to clean old files in prod
     * `npm i --save clean-webpack-plugin`
     * Add settings to webpack.prod file. Not needed in dev settings: since files on dev are created on fly.
+
+### 37.9 Multiple Entry Points - Split app and vendor code
+1. To separate bundle of different codes. viz separating our app code from vendor code like bootstrap etc.
+2. will create main.bundle.js and vendor.bundle.js based on the entry points in webpack.
+3. Test by adding bootstrap js separately in vendor.js

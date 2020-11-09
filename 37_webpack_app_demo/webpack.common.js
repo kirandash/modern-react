@@ -3,7 +3,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // devtool: "none", // to avoid use of eval for better readability
-    entry: "./src/index.js",
+    entry: {
+        main: "./src/index.js",
+        vendor: "./src/vendor.js"
+    }, // multiple entry points to separate bundles for app code and vendor code
     plugins: [new HtmlWebpackPlugin({
         template: "./src/template.html"
     })],
